@@ -70,7 +70,7 @@ export function GlossaryTerm({ children }: GlossaryTermProps) {
       <button
         ref={termRef}
         onClick={() => setIsOpen(!isOpen)}
-        className="text-[var(--accent)] font-medium hover:text-[var(--accent-light)] underline decoration-dotted underline-offset-2 cursor-help transition-colors"
+        className="text-[var(--accent)] font-medium hover:text-[var(--accent-light)] border-b border-[var(--accent)]/40 hover:border-[var(--accent)] cursor-pointer transition-all"
       >
         {children}
       </button>
