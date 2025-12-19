@@ -72,4 +72,68 @@ Major UI/UX improvements to the item detail page including layout redesign, colo
 - Mobile responsive layout optimization
 - Additional glossary terms as needed
 - Consider lazy-loading for glossary data if it grows significantly
-- Potential image zoom functionality for oshigata details
+
+---
+
+## 2025-12-19: Navigation & Panel Improvements (Continued Session)
+
+### Summary
+Enhanced item navigation with smooth transitions, collapsible panels with persistent state, zoom functionality, and metadata panel improvements.
+
+### Accomplishments
+
+#### 1. Smooth Item Navigation Transitions
+- Added keyboard navigation with left/right arrow keys
+- Implemented sliding image transition (image slides out, new one slides in)
+- Text panels fade during transition for clean visual effect
+- Fixed black flash issue by keeping old content visible during navigation
+- Uses `isInitialLoad` and `hasContent` refs to differentiate initial load from navigation
+
+#### 2. Collapsible Panels with Persistent State
+- Left panel (setsumei text) can be collapsed via toggle button
+- Added right panel (metadata) collapsibility with toggle button
+- Panel states persist across item navigation (closing a panel keeps it closed)
+- Toggle buttons positioned in top corners of image area
+- Smooth width/opacity transitions on collapse/expand
+
+#### 3. Image Zoom Functionality
+- Pinch-to-zoom on iOS/touch devices
+- Zoom in/out buttons with percentage indicator
+- Reset zoom button when zoomed
+- Mouse wheel zoom with Ctrl/Cmd modifier
+- Pan support when zoomed in
+
+#### 4. Metadata Panel Enhancements
+- Replaced "Significance" with "Documentary Value" and "Summary" fields
+- Documentary value shows `assessment.documentary_value`
+- Summary shows `assessment.overall_summary`
+- Both provide richer context about each item
+
+#### 5. Glossary System Improvements
+- Integrated 350-term comprehensive glossary from Oshi_data
+- Copied glossary.json to `/src/data/glossary.json` for local import
+- Removed underline styling from glossary terms (cleaner appearance)
+- Fixed tooltip overflow using React Portal (renders to document.body)
+- Tooltips no longer clipped by panel boundaries
+- Glossary terms only highlighted after "Overall Description" heading
+
+### Files Modified
+- `/src/app/item/[collection]/[volume]/[item]/page.tsx` - Navigation, transitions, collapsible panels, zoom
+- `/src/components/GlossaryTerm.tsx` - Portal-based tooltips, removed underline
+- `/src/lib/glossary.ts` - Updated import path for local glossary
+- `/src/components/icons.tsx` - Added ZoomInIcon, ZoomOutIcon, ZoomResetIcon, PanelLeftIcon
+
+### Files Created
+- `/src/data/glossary.json` - Local copy of comprehensive glossary (350 terms, 15 categories)
+
+### Technical Decisions
+- Used React Portal for glossary tooltips to escape overflow containers
+- Used refs (`isInitialLoad`, `hasContent`) to prevent loading flash during navigation
+- Panel states as useState (not refs) to trigger re-renders but persist across navigation
+- Image transition states: 'idle', 'exit-left', 'exit-right', 'enter'
+- 200ms exit animation, 300ms enter animation for smooth feel
+
+### Next Steps / Future Improvements
+- Mobile responsive layout optimization
+- Consider preloading next/previous images for even smoother navigation
+- Touch gesture improvements for swipe navigation

@@ -1,6 +1,7 @@
 'use client';
 
 import { useState, useRef, useEffect } from 'react';
+import { createPortal } from 'react-dom';
 import { findTerm, type GlossaryEntry } from '@/lib/glossary';
 
 interface GlossaryTermProps {
@@ -10,7 +11,7 @@ interface GlossaryTermProps {
 export function GlossaryTerm({ children }: GlossaryTermProps) {
   const [isOpen, setIsOpen] = useState(false);
   const [entry, setEntry] = useState<GlossaryEntry | null>(null);
-  const [position, setPosition] = useState<'above' | 'below'>('below');
+  const [tooltipStyle, setTooltipStyle] = useState<React.CSSProperties>({});
   const termRef = useRef<HTMLButtonElement>(null);
   const tooltipRef = useRef<HTMLDivElement>(null);
 
@@ -26,14 +27,42 @@ export function GlossaryTerm({ children }: GlossaryTermProps) {
     }
   }, [termText]);
 
+  // Position tooltip relative to viewport using portal
   useEffect(() => {
     if (isOpen && termRef.current) {
       const rect = termRef.current.getBoundingClientRect();
+      const tooltipWidth = 288; // w-72 = 18rem = 288px
+      const tooltipHeight = 150; // approximate height
+      const padding = 8;
+
+      // Calculate horizontal position
+      let left = rect.left;
+      if (left + tooltipWidth > window.innerWidth - padding) {
+        left = window.innerWidth - tooltipWidth - padding;
+      }
+      if (left < padding) {
+        left = padding;
+      }
+
+      // Calculate vertical position
       const spaceBelow = window.innerHeight - rect.bottom;
       const spaceAbove = rect.top;
 
-      // If less than 200px below, show above
-      setPosition(spaceBelow < 200 && spaceAbove > spaceBelow ? 'above' : 'below');
+      let top: number;
+      if (spaceBelow >= tooltipHeight + padding || spaceBelow >= spaceAbove) {
+        // Show below
+        top = rect.bottom + 8;
+      } else {
+        // Show above
+        top = rect.top - tooltipHeight - 8;
+      }
+
+      setTooltipStyle({
+        position: 'fixed',
+        top: `${top}px`,
+        left: `${left}px`,
+        width: `${tooltipWidth}px`,
+      });
     }
   }, [isOpen]);
 
@@ -52,8 +81,15 @@ export function GlossaryTerm({ children }: GlossaryTermProps) {
       }
     };
 
+    // Close on scroll
+    const handleScroll = () => setIsOpen(false);
+
     document.addEventListener('mousedown', handleClickOutside);
-    return () => document.removeEventListener('mousedown', handleClickOutside);
+    window.addEventListener('scroll', handleScroll, true);
+    return () => {
+      document.removeEventListener('mousedown', handleClickOutside);
+      window.removeEventListener('scroll', handleScroll, true);
+    };
   }, [isOpen]);
 
   // If no glossary entry found, just render as styled text
@@ -65,55 +101,56 @@ export function GlossaryTerm({ children }: GlossaryTermProps) {
     );
   }
 
+  const tooltip = isOpen && typeof document !== 'undefined' ? createPortal(
+    <div
+      ref={tooltipRef}
+      style={tooltipStyle}
+      className="z-[9999] p-3 rounded-lg bg-[var(--surface-elevated)] border border-[var(--border)] shadow-xl animate-fadeIn"
+    >
+      {/* Header */}
+      <div className="flex items-baseline gap-2 mb-2">
+        <span className="text-sm font-medium text-[var(--text-primary)]">
+          {entry.term}
+        </span>
+        {entry.kanji && (
+          <span className="text-sm text-[var(--accent)] font-jp">
+            {entry.kanji}
+          </span>
+        )}
+        {entry.reading && (
+          <span className="text-xs text-[var(--text-muted)] italic">
+            {entry.reading}
+          </span>
+        )}
+      </div>
+
+      {/* Definition */}
+      <p className="text-xs text-[var(--text-secondary)] leading-relaxed">
+        {entry.definition}
+      </p>
+
+      {/* Category badge */}
+      {entry.category && (
+        <div className="mt-2 pt-2 border-t border-[var(--border-subtle)]">
+          <span className="text-[9px] uppercase tracking-wider text-[var(--text-muted)]">
+            {entry.category.replace(/_/g, ' ')}
+          </span>
+        </div>
+      )}
+    </div>,
+    document.body
+  ) : null;
+
   return (
-    <span className="relative inline">
+    <>
       <button
         ref={termRef}
         onClick={() => setIsOpen(!isOpen)}
-        className="text-[var(--accent)] font-medium hover:text-[var(--accent-light)] border-b border-[var(--accent)]/40 hover:border-[var(--accent)] cursor-pointer transition-all"
+        className="text-[var(--accent)] font-medium hover:text-[var(--accent-light)] cursor-pointer transition-colors"
       >
         {children}
       </button>
-
-      {isOpen && (
-        <div
-          ref={tooltipRef}
-          className={`absolute z-50 left-0 w-72 p-3 rounded-lg bg-[var(--surface-elevated)] border border-[var(--border)] shadow-lg animate-fadeIn ${
-            position === 'above' ? 'bottom-full mb-2' : 'top-full mt-2'
-          }`}
-        >
-          {/* Header */}
-          <div className="flex items-baseline gap-2 mb-2">
-            <span className="text-sm font-medium text-[var(--text-primary)]">
-              {entry.term}
-            </span>
-            {entry.kanji && (
-              <span className="text-sm text-[var(--accent)] font-jp">
-                {entry.kanji}
-              </span>
-            )}
-            {entry.reading && (
-              <span className="text-xs text-[var(--text-muted)] italic">
-                {entry.reading}
-              </span>
-            )}
-          </div>
-
-          {/* Definition */}
-          <p className="text-xs text-[var(--text-secondary)] leading-relaxed">
-            {entry.definition}
-          </p>
-
-          {/* Category badge */}
-          {entry.category && (
-            <div className="mt-2 pt-2 border-t border-[var(--border-subtle)]">
-              <span className="text-[9px] uppercase tracking-wider text-[var(--text-muted)]">
-                {entry.category}
-              </span>
-            </div>
-          )}
-        </div>
-      )}
-    </span>
+      {tooltip}
+    </>
   );
 }
