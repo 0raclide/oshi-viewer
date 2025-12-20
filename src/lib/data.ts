@@ -2,6 +2,7 @@
 import fs from 'fs';
 import path from 'path';
 import type { Collection, ItemReference, ItemMetadata, ItemSummary, VolumeInfo, SearchFilters, SearchResult } from '@/types';
+import { parseQuery, matchItem, isEmptyQuery } from '@/lib/search';
 
 const DATA_ROOT = process.env.OSHI_DATA_PATH || '/Users/christopherhill/Desktop/Claude_project/Oshi_data';
 
@@ -301,5 +302,210 @@ export function getCollectionStats(collection: Collection): {
     totalVolumes: volumes.length,
     totalItems: volumes.reduce((sum, v) => sum + v.itemCount, 0),
     volumesWithTranslations: volumes.filter(v => v.hasTranslations).length,
+  };
+}
+
+// Extended item info for browse view (includes era, tradition, meiStatus, nakagoCondition, denrai, kiwame)
+export interface BrowseItem extends ItemSummary {
+  era?: string;
+  tradition?: string;
+  meiStatus?: string;
+  isEnsemble?: boolean;
+  denrai?: string;  // Primary provenance (first entry from denrai array)
+  kiwame?: string;  // Appraiser name (e.g., "Hon'ami Kochu", "Kojo")
+}
+
+// Internal item with all fields for filtering (includes metadata for rich search)
+interface InternalBrowseItem extends BrowseItem {
+  smithRomaji?: string;
+  metadata?: ItemMetadata | null;  // For rich search matching
+}
+
+// Get all items for browse view with extended metadata
+// Facet counts are computed dynamically based on filtered results
+export function getBrowseItems(filters?: {
+  query?: string;  // Text search
+  collection?: Collection;
+  volume?: number;
+  itemType?: string;  // token, tosogu, koshirae
+  era?: string;
+  school?: string;
+  tradition?: string;
+  bladeType?: string;
+  smith?: string;
+  meiStatus?: string;
+  nakagoCondition?: string;
+  denrai?: string;  // Provenance filter
+  kiwame?: string;  // Appraiser filter
+  isEnsemble?: boolean;  // Filter for items with blade + koshirae
+  hasTranslation?: boolean;
+}): {
+  items: BrowseItem[];
+  facets: {
+    eras: { value: string; label: string; count: number }[];
+    schools: { value: string; label: string; count: number }[];
+    traditions: { value: string; label: string; count: number }[];
+    bladeTypes: { value: string; label: string; count: number }[];
+    smiths: { value: string; label: string; count: number }[];
+    meiStatuses: { value: string; label: string; count: number }[];
+    nakagoConditions: { value: string; label: string; count: number }[];
+    denrais: { value: string; label: string; count: number }[];
+    kiwames: { value: string; label: string; count: number }[];
+  };
+} {
+  // First pass: collect all items with metadata
+  const rawItems: InternalBrowseItem[] = [];
+
+  const collections: Collection[] = filters?.collection ? [filters.collection] : ['Tokuju', 'Juyo'];
+
+  for (const collection of collections) {
+    const volumes = listVolumes(collection);
+
+    for (const vol of volumes) {
+      // Skip if filtering by specific volume
+      if (filters?.volume !== undefined && vol.volume !== filters.volume) continue;
+
+      const processedPath = getProcessedPath(collection, vol.volume);
+      const translationsPath = getTranslationsPath(collection, vol.volume);
+
+      try {
+        const files = fs.readdirSync(processedPath);
+        const oshigataFiles = files.filter(f => f.endsWith('_oshigata.jpg'));
+
+        for (const file of oshigataFiles) {
+          const match = file.match(/^item_(\d+)_oshigata\.jpg$/);
+          if (!match) continue;
+
+          const itemNum = parseInt(match[1], 10);
+          const ref: ItemReference = { collection, volume: vol.volume, item: itemNum };
+
+          // Load full metadata
+          const metadataPath = getMetadataPath(ref);
+          const metadata = readJsonFile<ItemMetadata>(metadataPath);
+
+          const makerName = extractMakerName(metadata);
+          const displayType = extractDisplayType(metadata);
+          const school = metadata?.smith?.school || metadata?.maker?.school || metadata?.fittings_maker?.school || undefined;
+          const era = metadata?.era?.period || undefined;
+          const tradition = metadata?.smith?.tradition || metadata?.maker?.lineage || undefined;
+          const meiStatus = metadata?.mei?.status || undefined;
+          const nakagoCondition = metadata?.nakago?.condition || undefined;
+          const isEnsemble = metadata?.ensemble?.is_ensemble || false;
+          const hasTranslation = fileExists(path.join(translationsPath, `item_${String(itemNum).padStart(3, '0')}_translation.md`));
+          // Extract primary denrai (provenance) - first non-empty entry
+          const denraiArray = metadata?.provenance?.denrai || [];
+          const denrai = denraiArray.find((d: string) => d && d.trim()) || undefined;
+          // Extract kiwame (appraiser name)
+          const kiwame = metadata?.mei?.appraiser?.name || undefined;
+
+          rawItems.push({
+            collection,
+            volume: vol.volume,
+            item: itemNum,
+            smithNameKanji: makerName.kanji,
+            smithNameRomaji: makerName.romaji,
+            smithRomaji: makerName.romaji, // For filtering
+            school,
+            bladeType: displayType,
+            itemType: metadata?.item_type || undefined,
+            fittingType: metadata?.fitting_type || undefined,
+            nagasa: metadata?.measurements?.nagasa || undefined,
+            nakagoCondition,
+            isEnsemble,
+            hasTranslation,
+            era,
+            tradition,
+            meiStatus,
+            denrai,
+            kiwame,
+            metadata,  // Store full metadata for rich search
+          });
+        }
+      } catch (error) {
+        console.error(`Error processing ${collection} vol ${vol.volume}:`, error);
+      }
+    }
+  }
+
+  // Parse the search query once (if provided)
+  const parsedQuery = filters?.query ? parseQuery(filters.query) : null;
+  const hasSearchQuery = parsedQuery && !isEmptyQuery(parsedQuery);
+
+  // Helper to check if item matches a filter (excluding one filter for facet counting)
+  const matchesFilters = (item: InternalBrowseItem, excludeFilter?: string): boolean => {
+    if (excludeFilter !== 'itemType' && filters?.itemType && item.itemType !== filters.itemType) return false;
+    if (excludeFilter !== 'era' && filters?.era && item.era !== filters.era) return false;
+    if (excludeFilter !== 'school' && filters?.school && item.school !== filters.school) return false;
+    if (excludeFilter !== 'tradition' && filters?.tradition && item.tradition !== filters.tradition) return false;
+    if (excludeFilter !== 'bladeType' && filters?.bladeType && item.bladeType !== filters.bladeType) return false;
+    if (excludeFilter !== 'smith' && filters?.smith && item.smithRomaji !== filters.smith) return false;
+    if (excludeFilter !== 'meiStatus' && filters?.meiStatus && item.meiStatus !== filters.meiStatus) return false;
+    if (excludeFilter !== 'nakagoCondition' && filters?.nakagoCondition && item.nakagoCondition !== filters.nakagoCondition) return false;
+    if (excludeFilter !== 'denrai' && filters?.denrai && item.denrai !== filters.denrai) return false;
+    if (excludeFilter !== 'kiwame' && filters?.kiwame && item.kiwame !== filters.kiwame) return false;
+    if (excludeFilter !== 'isEnsemble' && filters?.isEnsemble === true && !item.isEnsemble) return false;
+    if (excludeFilter !== 'hasTranslation' && filters?.hasTranslation === true && !item.hasTranslation) return false;
+    if (excludeFilter !== 'hasTranslation' && filters?.hasTranslation === false && item.hasTranslation) return false;
+
+    // Rich search query matching (supports field:value, comparisons, negations, phrases)
+    if (hasSearchQuery && parsedQuery) {
+      if (!matchItem(item, parsedQuery)) return false;
+    }
+
+    return true;
+  };
+
+  // Compute facet counts dynamically (each facet counts items matching all OTHER filters)
+  const computeFacetCounts = (field: keyof InternalBrowseItem, filterName: string): Record<string, number> => {
+    const counts: Record<string, number> = {};
+    for (const item of rawItems) {
+      if (!matchesFilters(item, filterName)) continue;
+      const value = item[field] as string | undefined;
+      if (value && value !== 'Unknown') {
+        counts[value] = (counts[value] || 0) + 1;
+      }
+    }
+    return counts;
+  };
+
+  const eraCounts = computeFacetCounts('era', 'era');
+  const schoolCounts = computeFacetCounts('school', 'school');
+  const traditionCounts = computeFacetCounts('tradition', 'tradition');
+  const bladeTypeCounts = computeFacetCounts('bladeType', 'bladeType');
+  const smithCounts = computeFacetCounts('smithRomaji', 'smith');
+  const meiStatusCounts = computeFacetCounts('meiStatus', 'meiStatus');
+  const nakagoConditionCounts = computeFacetCounts('nakagoCondition', 'nakagoCondition');
+  const denraiCounts = computeFacetCounts('denrai', 'denrai');
+  const kiwameCounts = computeFacetCounts('kiwame', 'kiwame');
+
+  // Filter items for final result
+  const filteredItems = rawItems.filter(item => matchesFilters(item));
+
+  // Sort items by collection, volume, item number
+  filteredItems.sort((a, b) => {
+    if (a.collection !== b.collection) return a.collection.localeCompare(b.collection);
+    if (a.volume !== b.volume) return a.volume - b.volume;
+    return a.item - b.item;
+  });
+
+  // Convert counts to facet options
+  const toFacetOptions = (counts: Record<string, number>) =>
+    Object.entries(counts)
+      .map(([value, count]) => ({ value, label: value, count }))
+      .sort((a, b) => b.count - a.count);
+
+  return {
+    items: filteredItems,
+    facets: {
+      eras: toFacetOptions(eraCounts),
+      schools: toFacetOptions(schoolCounts),
+      traditions: toFacetOptions(traditionCounts),
+      bladeTypes: toFacetOptions(bladeTypeCounts),
+      smiths: toFacetOptions(smithCounts).slice(0, 50), // Limit smiths to top 50
+      meiStatuses: toFacetOptions(meiStatusCounts),
+      nakagoConditions: toFacetOptions(nakagoConditionCounts),
+      denrais: toFacetOptions(denraiCounts).slice(0, 50), // Limit denrai to top 50
+      kiwames: toFacetOptions(kiwameCounts),
+    },
   };
 }

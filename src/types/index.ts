@@ -23,6 +23,8 @@ export interface ItemSummary extends ItemReference {
   itemType?: string;  // 'token' | 'tosogu' | 'koshirae'
   fittingType?: string;  // For tosogu: tsuba, kozuka, etc.
   nagasa?: number;
+  nakagoCondition?: string;  // ubu, suriage, o-suriage, etc.
+  isEnsemble?: boolean;  // Item includes both blade and koshirae
   hasTranslation: boolean;
 }
 
@@ -185,6 +187,11 @@ export interface ItemMetadata {
     name_kanji: string | null;
   };
 
+  ensemble?: {
+    is_ensemble: boolean;
+    ensemble_type: string | null;
+  };
+
   _source: {
     collection: string;
     volume: number;
@@ -227,4 +234,89 @@ export interface Bookmark {
   smithName: string;
   bladeType: string;
   addedAt: string;
+  collectionIds?: string[];  // Which user collections this belongs to
+  notes?: string;  // Personal notes
+}
+
+// User collection (like a Spotify playlist)
+export interface UserCollection {
+  id: string;
+  name: string;
+  description?: string;
+  createdAt: string;
+  updatedAt: string;
+  itemIds: string[];  // Array of itemRefToId strings
+}
+
+// Special collection ID for "All Saved"
+export const ALL_SAVED_COLLECTION_ID = '__all__';
+
+// Collection View types
+export type ItemType = 'token' | 'tosogu' | 'koshirae';
+
+export interface CollectionFilters {
+  query?: string;  // Text search
+  collection?: Collection;
+  volume?: number;
+  itemType?: ItemType;  // token (blades), tosogu (fittings), koshirae (mountings)
+  era?: string;
+  school?: string;
+  tradition?: string;
+  bladeType?: string;
+  smith?: string;
+  meiStatus?: string;
+  nakagoCondition?: string;  // ubu, suriage, o-suriage, etc.
+  denrai?: string;  // Provenance (e.g., "Tokugawa shogunal house")
+  kiwame?: string;  // Appraiser name (e.g., "Hon'ami Kochu", "Kojo")
+  isEnsemble?: boolean;  // Items with both blade and koshirae
+  hasTranslation?: boolean;
+}
+
+export interface FilterOption {
+  value: string;
+  label: string;
+  count: number;
+}
+
+export interface FilterFacets {
+  eras: FilterOption[];
+  schools: FilterOption[];
+  traditions: FilterOption[];
+  bladeTypes: FilterOption[];
+  smiths: FilterOption[];
+  meiStatuses: FilterOption[];
+  nakagoConditions: FilterOption[];
+  denrais: FilterOption[];
+  kiwames: FilterOption[];
+}
+
+export interface CollectionStats {
+  totalItems: number;
+  withTranslation: number;
+  byEra: Record<string, number>;
+  bySchool: Record<string, number>;
+  byTradition: Record<string, number>;
+  byBladeType: Record<string, number>;
+  byMeiStatus: Record<string, number>;
+  avgNagasa: number | null;
+  nagasaRange: { min: number; max: number } | null;
+}
+
+export interface SelectionState {
+  selectedIds: Set<string>;
+  lastSelectedId: string | null;
+}
+
+// Utility to create item ID from reference
+export function itemRefToId(ref: ItemReference): string {
+  return `${ref.collection}-${ref.volume}-${ref.item}`;
+}
+
+export function idToItemRef(id: string): ItemReference {
+  const [collection, volume, item] = id.split('-');
+  return {
+    collection: collection as Collection,
+    volume: parseInt(volume, 10),
+    item: parseInt(item, 10),
+  };
 }

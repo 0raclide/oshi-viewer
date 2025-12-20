@@ -18,7 +18,7 @@ export function GlossaryTerm({ children }: GlossaryTermProps) {
   // Extract text content from children
   const termText = typeof children === 'string'
     ? children
-    : (children as React.ReactElement)?.props?.children || '';
+    : (children as React.ReactElement<{ children?: React.ReactNode }>)?.props?.children?.toString() || '';
 
   useEffect(() => {
     if (termText) {

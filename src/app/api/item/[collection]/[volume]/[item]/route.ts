@@ -2,6 +2,9 @@ import { NextRequest, NextResponse } from 'next/server';
 import { getItemData } from '@/lib/data';
 import type { Collection, ItemReference } from '@/types';
 
+// Cache item data for 1 hour - data is static
+export const revalidate = 3600;
+
 export async function GET(
   request: NextRequest,
   { params }: { params: Promise<{ collection: string; volume: string; item: string }> }

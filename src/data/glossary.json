@@ -1,10 +1,11 @@
 {
   "_metadata": {
     "title": "Japanese Sword Terminology Glossary",
-    "description": "Technical terms used in Japanese sword (nihonto) documentation, extracted from Tokubetsu Juyo translations",
-    "version": "1.0.0",
+    "description": "Technical terms used in Japanese sword (nihonto) documentation, extracted from Juyo and Tokubetsu Juyo translations",
+    "version": "1.2.0",
     "created": "2025-12-19",
-    "total_terms": 350
+    "total_terms": 377,
+    "updated": "2025-12-21"
   },
   "categories": {
     "blade_types": "Types of Japanese blades",
@@ -25,466 +26,28 @@
   },
   "terms": [
     {
-      "romaji": "tachi",
-      "kanji": "太刀",
-      "category": "blade_types",
-      "definition": "A long sword worn edge-down, suspended from the belt. The primary battlefield sword of the Heian through Muromachi periods."
+      "romaji": "aikuchi",
+      "kanji": "合口",
+      "category": "koshirae",
+      "definition": "Mountings without a tsuba (guard), typically for tanto."
     },
     {
-      "romaji": "katana",
-      "kanji": "刀",
-      "category": "blade_types",
-      "definition": "A long sword worn edge-up, thrust through the belt. Became standard from the Muromachi period onward."
+      "romaji": "aka-urushi",
+      "kanji": "赤漆",
+      "category": "lacquer",
+      "definition": "Red lacquer."
     },
     {
-      "romaji": "wakizashi",
-      "kanji": "脇差",
-      "category": "blade_types",
-      "definition": "A short sword, typically 30-60 cm in blade length. Often paired with a katana as part of a daisho set."
+      "romaji": "Aoe",
+      "kanji": "青江",
+      "category": "schools",
+      "definition": "A Bitchu Province school active from late Heian through Nanbokucho. Known for chirimen-hada and refined workmanship."
     },
     {
-      "romaji": "tanto",
-      "kanji": "短刀",
-      "category": "blade_types",
-      "definition": "A dagger or knife, typically under 30 cm in blade length."
-    },
-    {
-      "romaji": "ken",
-      "kanji": "剣",
-      "category": "blade_types",
-      "definition": "A double-edged straight sword, often with religious or ceremonial significance."
-    },
-    {
-      "romaji": "naginata",
-      "kanji": "薙刀",
-      "category": "blade_types",
-      "definition": "A polearm with a curved blade, used primarily by warrior monks and women of samurai families."
-    },
-    {
-      "romaji": "yari",
-      "kanji": "槍",
-      "category": "blade_types",
-      "definition": "A spear with various blade shapes."
-    },
-    {
-      "romaji": "kodachi",
-      "kanji": "小太刀",
-      "category": "blade_types",
-      "definition": "A short tachi, smaller than a standard tachi but larger than a wakizashi."
-    },
-    {
-      "romaji": "nagamaki",
-      "kanji": "長巻",
-      "category": "blade_types",
-      "definition": "A weapon with a blade similar to a tachi but with an exceptionally long handle wrapped in cord."
-    },
-    {
-      "romaji": "daisho",
-      "kanji": "大小",
-      "category": "blade_types",
-      "definition": "A matched pair of long and short swords (katana and wakizashi), symbol of samurai status."
-    },
-    {
-      "romaji": "shinogi-zukuri",
-      "kanji": "鎬造",
-      "category": "sugata",
-      "definition": "The most common blade construction with a distinct ridge line (shinogi) running along the blade."
-    },
-    {
-      "romaji": "hira-zukuri",
-      "kanji": "平造",
-      "category": "sugata",
-      "definition": "Flat construction without a shinogi ridge, common on tanto and some wakizashi."
-    },
-    {
-      "romaji": "kiriba-zukuri",
-      "kanji": "切刃造",
-      "category": "sugata",
-      "definition": "An ancient blade form with a triangular cross-section, found mainly on early ken."
-    },
-    {
-      "romaji": "shobu-zukuri",
-      "kanji": "菖蒲造",
-      "category": "sugata",
-      "definition": "Similar to shinogi-zukuri but without a yokote line, giving a continuous curve to the point."
-    },
-    {
-      "romaji": "unokubi-zukuri",
-      "kanji": "鵜首造",
-      "category": "sugata",
-      "definition": "A blade form with the shinogi line dropping sharply near the point, creating a cormorant-neck profile."
-    },
-    {
-      "romaji": "kanmuri-otoshi-zukuri",
-      "kanji": "冠落造",
-      "category": "sugata",
-      "definition": "A blade form where the back is beveled near the point."
-    },
-    {
-      "romaji": "moroha-zukuri",
-      "kanji": "諸刃造",
-      "category": "sugata",
-      "definition": "Double-edged construction, typical of ken."
-    },
-    {
-      "romaji": "kissaki",
-      "kanji": "切先",
-      "category": "sugata",
-      "definition": "The point or tip section of the blade."
-    },
-    {
-      "romaji": "ko-kissaki",
-      "kanji": "小切先",
-      "category": "sugata",
-      "definition": "A small point, typical of Heian and early Kamakura period blades."
-    },
-    {
-      "romaji": "chu-kissaki",
-      "kanji": "中切先",
-      "category": "sugata",
-      "definition": "A medium-sized point, the most common size."
-    },
-    {
-      "romaji": "o-kissaki",
-      "kanji": "大切先",
-      "category": "sugata",
-      "definition": "A large, extended point, characteristic of Nanbokucho period blades."
-    },
-    {
-      "romaji": "ikubi-kissaki",
-      "kanji": "猪首切先",
-      "category": "sugata",
-      "definition": "A stubby, boar-neck shaped point, characteristic of certain Kamakura blades."
-    },
-    {
-      "romaji": "fukura",
-      "kanji": "ふくら",
-      "category": "sugata",
-      "definition": "The curve of the cutting edge in the kissaki area."
-    },
-    {
-      "romaji": "mihaba",
-      "kanji": "身幅",
-      "category": "sugata",
-      "definition": "The width of the blade."
-    },
-    {
-      "romaji": "motohaba",
-      "kanji": "元幅",
-      "category": "sugata",
-      "definition": "The width of the blade at the base (machi)."
-    },
-    {
-      "romaji": "sakihaba",
-      "kanji": "先幅",
-      "category": "sugata",
-      "definition": "The width of the blade near the point."
-    },
-    {
-      "romaji": "kasane",
-      "kanji": "重ね",
-      "category": "sugata",
-      "definition": "The thickness of the blade at the back (mune)."
-    },
-    {
-      "romaji": "nagasa",
-      "kanji": "長さ",
-      "category": "sugata",
-      "definition": "The length of the blade, measured in a straight line from the machi to the tip."
-    },
-    {
-      "romaji": "sori",
-      "kanji": "反り",
-      "category": "sugata",
-      "definition": "The curvature of the blade."
-    },
-    {
-      "romaji": "koshizori",
-      "kanji": "腰反り",
-      "category": "sugata",
-      "definition": "Curvature concentrated near the base of the blade, typical of early tachi."
-    },
-    {
-      "romaji": "torii-zori",
-      "kanji": "鳥居反り",
-      "category": "sugata",
-      "definition": "Even curvature along the entire blade length, like a torii gate."
-    },
-    {
-      "romaji": "sakizori",
-      "kanji": "先反り",
-      "category": "sugata",
-      "definition": "Curvature concentrated toward the point."
-    },
-    {
-      "romaji": "uchizori",
-      "kanji": "内反り",
-      "category": "sugata",
-      "definition": "Reverse curvature where the edge curves inward, common on tanto."
-    },
-    {
-      "romaji": "muzori",
-      "kanji": "無反り",
-      "category": "sugata",
-      "definition": "No curvature; a straight blade."
-    },
-    {
-      "romaji": "funbari",
-      "kanji": "踏張り",
-      "category": "sugata",
-      "definition": "The tapering of the blade from base to point, giving a sturdy appearance at the base."
-    },
-    {
-      "romaji": "mune",
-      "kanji": "棟",
-      "category": "sugata",
-      "definition": "The back of the blade (opposite the cutting edge)."
-    },
-    {
-      "romaji": "iori-mune",
-      "kanji": "庵棟",
-      "category": "sugata",
-      "definition": "A peaked or roof-shaped back, the most common form."
-    },
-    {
-      "romaji": "mitsu-mune",
-      "kanji": "三棟",
-      "category": "sugata",
-      "definition": "A three-sided back with a flat top."
-    },
-    {
-      "romaji": "maru-mune",
-      "kanji": "丸棟",
-      "category": "sugata",
-      "definition": "A rounded back."
-    },
-    {
-      "romaji": "kaku-mune",
-      "kanji": "角棟",
-      "category": "sugata",
-      "definition": "A flat, square back."
-    },
-    {
-      "romaji": "shinogi",
-      "kanji": "鎬",
-      "category": "sugata",
-      "definition": "The ridge line running along the blade that divides the ji (flat) from the shinogi-ji."
-    },
-    {
-      "romaji": "shinogi-ji",
-      "kanji": "鎬地",
-      "category": "sugata",
-      "definition": "The flat area between the shinogi and the mune."
-    },
-    {
-      "romaji": "hira-ji",
-      "kanji": "平地",
-      "category": "sugata",
-      "definition": "The flat area between the shinogi and the hamon."
-    },
-    {
-      "romaji": "yokote",
-      "kanji": "横手",
-      "category": "sugata",
-      "definition": "The line separating the main blade from the kissaki."
-    },
-    {
-      "romaji": "machi",
-      "kanji": "区",
-      "category": "sugata",
-      "definition": "The notches at the base of the blade where it meets the tang."
-    },
-    {
-      "romaji": "ha-machi",
-      "kanji": "刃区",
-      "category": "sugata",
-      "definition": "The notch on the cutting edge side."
-    },
-    {
-      "romaji": "mune-machi",
-      "kanji": "棟区",
-      "category": "sugata",
-      "definition": "The notch on the back (mune) side."
-    },
-    {
-      "romaji": "monouchi",
-      "kanji": "物打",
-      "category": "sugata",
-      "definition": "The striking portion of the blade, approximately the upper third."
-    },
-    {
-      "romaji": "sun-nobi",
-      "kanji": "寸延び",
-      "category": "sugata",
-      "definition": "Extended length, longer than the standard for the blade type."
-    },
-    {
-      "romaji": "sun-zumari",
-      "kanji": "寸詰り",
-      "category": "sugata",
-      "definition": "Shortened length, shorter than the standard for the blade type."
-    },
-    {
-      "romaji": "hiraniku",
-      "kanji": "平肉",
-      "category": "sugata",
-      "definition": "The convexity or 'meat' of the blade surface, indicating health and remaining material."
-    },
-    {
-      "romaji": "nikuoki",
-      "kanji": "肉置き",
-      "category": "sugata",
-      "definition": "The distribution of thickness/meat across the blade, indicating robustness."
-    },
-    {
-      "romaji": "niku",
-      "kanji": "肉",
-      "category": "sugata",
-      "definition": "The flesh or meat of the blade; the convex surface thickness."
-    },
-    {
-      "romaji": "kitae",
-      "kanji": "鍛え",
-      "category": "kitae",
-      "definition": "Forging; the process of folding and welding the steel to create the blade."
-    },
-    {
-      "romaji": "jihada",
-      "kanji": "地肌",
-      "category": "kitae",
-      "definition": "The surface grain pattern visible on the blade, created by folding."
-    },
-    {
-      "romaji": "hada",
-      "kanji": "肌",
-      "category": "kitae",
-      "definition": "Grain; the pattern visible in the steel from the folding process."
-    },
-    {
-      "romaji": "jigane",
-      "kanji": "地鉄",
-      "category": "kitae",
-      "definition": "The base steel of the blade; the steel quality and character."
-    },
-    {
-      "romaji": "jitetsu",
-      "kanji": "地鉄",
-      "category": "kitae",
-      "definition": "Same as jigane; the steel of the blade body."
-    },
-    {
-      "romaji": "ji",
-      "kanji": "地",
-      "category": "kitae",
-      "definition": "The surface area of the blade between the shinogi and the hamon."
-    },
-    {
-      "romaji": "itame",
-      "kanji": "板目",
-      "category": "kitae",
-      "definition": "Wood-grain pattern in the steel, resembling the grain of a wooden plank."
-    },
-    {
-      "romaji": "itame-hada",
-      "kanji": "板目肌",
-      "category": "kitae",
-      "definition": "Wood-grain pattern skin/surface."
-    },
-    {
-      "romaji": "ko-itame",
-      "kanji": "小板目",
-      "category": "kitae",
-      "definition": "Fine, small wood-grain pattern."
-    },
-    {
-      "romaji": "o-itame",
-      "kanji": "大板目",
-      "category": "kitae",
-      "definition": "Large, coarse wood-grain pattern."
-    },
-    {
-      "romaji": "mokume",
-      "kanji": "杢目",
-      "category": "kitae",
-      "definition": "Burl or swirling grain pattern, like knots in wood."
-    },
-    {
-      "romaji": "mokume-hada",
-      "kanji": "杢目肌",
-      "category": "kitae",
-      "definition": "Burl-grain pattern skin/surface."
-    },
-    {
-      "romaji": "ko-mokume",
-      "kanji": "小杢目",
-      "category": "kitae",
-      "definition": "Fine, small burl-grain pattern."
-    },
-    {
-      "romaji": "o-mokume",
-      "kanji": "大杢目",
-      "category": "kitae",
-      "definition": "Large, coarse burl-grain pattern."
-    },
-    {
-      "romaji": "masame",
-      "kanji": "柾目",
-      "category": "kitae",
-      "definition": "Straight grain pattern running parallel to the blade length."
-    },
-    {
-      "romaji": "masame-hada",
-      "kanji": "柾目肌",
-      "category": "kitae",
-      "definition": "Straight grain pattern skin/surface."
-    },
-    {
-      "romaji": "ayasugi-hada",
-      "kanji": "綾杉肌",
-      "category": "kitae",
-      "definition": "Wavy, chevron or zigzag grain pattern, characteristic of Gassan school."
-    },
-    {
-      "romaji": "nagare-hada",
-      "kanji": "流れ肌",
-      "category": "kitae",
-      "definition": "Flowing grain pattern, where the hada appears to flow along the blade."
-    },
-    {
-      "romaji": "chirimen-hada",
-      "kanji": "縮緬肌",
-      "category": "kitae",
-      "definition": "Crepe-like texture, fine and tightly packed grain with a slightly rough appearance."
-    },
-    {
-      "romaji": "nashiji-hada",
-      "kanji": "梨子地肌",
-      "category": "kitae",
-      "definition": "Pear-skin texture, a fine, granular surface appearance."
-    },
-    {
-      "romaji": "muji-hada",
-      "kanji": "無地肌",
-      "category": "kitae",
-      "definition": "Patternless or invisible grain, extremely fine forging."
-    },
-    {
-      "romaji": "ji-nie",
-      "kanji": "地沸",
-      "category": "kitae",
-      "definition": "Martensite crystals visible in the ji (surface) area, appearing as bright spots."
-    },
-    {
-      "romaji": "nie",
-      "kanji": "沸",
-      "category": "kitae",
-      "definition": "Individual crystals of martensite visible as bright, sparkling particles."
-    },
-    {
-      "romaji": "ko-nie",
-      "kanji": "小沸",
-      "category": "kitae",
-      "definition": "Small, fine nie particles."
+      "romaji": "aoi-mon",
+      "kanji": "葵紋",
+      "category": "general",
+      "definition": "Hollyhock crest; the Tokugawa family emblem."
     },
     {
       "romaji": "ara-nie",
@@ -493,40 +56,40 @@
       "definition": "Coarse, rough nie particles."
     },
     {
-      "romaji": "nioi",
-      "kanji": "匂",
-      "category": "kitae",
-      "definition": "Extremely fine martensite particles not individually visible, creating a misty appearance."
+      "romaji": "ashi",
+      "kanji": "足",
+      "category": "hamon",
+      "definition": "Legs; short lines extending from the hamon toward the edge."
     },
     {
-      "romaji": "chikei",
-      "kanji": "地景",
-      "category": "kitae",
-      "definition": "Dark lines in the ji created by concentrations of steel during folding."
+      "romaji": "Awataguchi",
+      "kanji": "粟田口",
+      "category": "schools",
+      "definition": "A prestigious Yamashiro school in Kyoto, active from late Heian through Kamakura. Known for refined tanto and elegant workmanship."
     },
     {
-      "romaji": "jifu",
-      "kanji": "地斑",
+      "romaji": "ayasugi-hada",
+      "kanji": "綾杉肌",
       "category": "kitae",
-      "definition": "Dark patches or mottling in the ji area."
+      "definition": "Wavy, chevron or zigzag grain pattern, characteristic of Gassan school."
     },
     {
-      "romaji": "utsuri",
-      "kanji": "映り",
-      "category": "kitae",
-      "definition": "A misty, cloud-like reflection in the ji, especially characteristic of Bizen work."
+      "romaji": "Bitchu",
+      "kanji": "備中",
+      "category": "general",
+      "definition": "Bitchu Province; a region in present-day western Okayama Prefecture, home to the Aoe school."
     },
     {
-      "romaji": "midare-utsuri",
-      "kanji": "乱映り",
-      "category": "kitae",
-      "definition": "Irregular, wavy utsuri pattern that mirrors the hamon."
+      "romaji": "Bizen",
+      "kanji": "備前",
+      "category": "general",
+      "definition": "Bizen Province; a region in present-day southeastern Okayama Prefecture, the most prolific sword-making province."
     },
     {
-      "romaji": "nie-utsuri",
-      "kanji": "沸映り",
-      "category": "kitae",
-      "definition": "Utsuri formed by nie particles, characteristic of Yamashiro work."
+      "romaji": "bo-hi",
+      "kanji": "棒樋",
+      "category": "horimono",
+      "definition": "Single straight groove."
     },
     {
       "romaji": "bo-utsuri",
@@ -535,364 +98,10 @@
       "definition": "Straight, bar-like utsuri parallel to the blade."
     },
     {
-      "romaji": "jifu-utsuri",
-      "kanji": "地斑映り",
-      "category": "kitae",
-      "definition": "Mottled, patchy utsuri pattern."
-    },
-    {
-      "romaji": "shirake-utsuri",
-      "kanji": "白気映り",
-      "category": "kitae",
-      "definition": "Whitish, faint utsuri."
-    },
-    {
-      "romaji": "hamon",
-      "kanji": "刃文",
-      "category": "hamon",
-      "definition": "The temper line pattern visible along the edge, created by differential hardening."
-    },
-    {
-      "romaji": "ha",
-      "kanji": "刃",
-      "category": "hamon",
-      "definition": "The cutting edge; also the hardened area of the blade."
-    },
-    {
-      "romaji": "yakiba",
-      "kanji": "焼刃",
-      "category": "hamon",
-      "definition": "The hardened edge area; the tempered portion of the blade."
-    },
-    {
-      "romaji": "habuchi",
-      "kanji": "刃縁",
-      "category": "hamon",
-      "definition": "The boundary line of the hamon; the edge of the tempered area."
-    },
-    {
-      "romaji": "nioiguchi",
-      "kanji": "匂口",
-      "category": "hamon",
-      "definition": "The visible edge of the hamon where hardened steel meets softer steel."
-    },
-    {
-      "romaji": "yakihaba",
-      "kanji": "焼幅",
-      "category": "hamon",
-      "definition": "The width of the tempered area (hamon)."
-    },
-    {
-      "romaji": "suguha",
-      "kanji": "直刃",
-      "category": "hamon",
-      "definition": "Straight temper line running parallel to the edge."
-    },
-    {
-      "romaji": "suguha-cho",
-      "kanji": "直刃調",
-      "category": "hamon",
-      "definition": "Straight temper line tendency; primarily straight with slight variations."
-    },
-    {
-      "romaji": "notare",
-      "kanji": "湾れ",
-      "category": "hamon",
-      "definition": "Gentle, wave-like undulations in the hamon."
-    },
-    {
-      "romaji": "ko-notare",
-      "kanji": "小湾れ",
-      "category": "hamon",
-      "definition": "Small, gentle wave pattern."
-    },
-    {
-      "romaji": "o-notare",
-      "kanji": "大湾れ",
-      "category": "hamon",
-      "definition": "Large, pronounced wave pattern."
-    },
-    {
-      "romaji": "notare-komi",
-      "kanji": "湾れ込み",
-      "category": "hamon",
-      "definition": "Waves that extend deeply into the blade."
-    },
-    {
-      "romaji": "gunome",
-      "kanji": "互の目",
-      "category": "hamon",
-      "definition": "Regular, repeated zigzag or sawtooth pattern."
-    },
-    {
-      "romaji": "ko-gunome",
-      "kanji": "小互の目",
-      "category": "hamon",
-      "definition": "Small gunome pattern."
-    },
-    {
-      "romaji": "o-gunome",
-      "kanji": "大互の目",
-      "category": "hamon",
-      "definition": "Large gunome pattern."
-    },
-    {
-      "romaji": "gunome-midare",
-      "kanji": "互の目乱れ",
-      "category": "hamon",
-      "definition": "Irregular gunome pattern."
-    },
-    {
-      "romaji": "choji",
-      "kanji": "丁子",
-      "category": "hamon",
-      "definition": "Clove-shaped pattern resembling the clove spice bud."
-    },
-    {
-      "romaji": "ko-choji",
-      "kanji": "小丁子",
-      "category": "hamon",
-      "definition": "Small clove pattern."
-    },
-    {
-      "romaji": "o-choji",
-      "kanji": "大丁子",
-      "category": "hamon",
-      "definition": "Large clove pattern."
-    },
-    {
-      "romaji": "choji-midare",
-      "kanji": "丁子乱れ",
-      "category": "hamon",
-      "definition": "Irregular clove pattern."
-    },
-    {
-      "romaji": "juka-choji",
-      "kanji": "重花丁子",
-      "category": "hamon",
-      "definition": "Overlapping, complex clove pattern."
-    },
-    {
-      "romaji": "kawazu-ko choji",
-      "kanji": "蛙子丁子",
-      "category": "hamon",
-      "definition": "Tadpole-head choji; cloves with bulbous heads like tadpoles."
-    },
-    {
-      "romaji": "midare",
-      "kanji": "乱れ",
-      "category": "hamon",
-      "definition": "Irregular, mixed temper pattern."
-    },
-    {
-      "romaji": "ko-midare",
-      "kanji": "小乱れ",
-      "category": "hamon",
-      "definition": "Small irregular pattern."
-    },
-    {
-      "romaji": "o-midare",
-      "kanji": "大乱れ",
-      "category": "hamon",
-      "definition": "Large irregular pattern."
-    },
-    {
-      "romaji": "midareba",
-      "kanji": "乱刃",
-      "category": "hamon",
-      "definition": "Irregular temper line; general term for non-straight hamon."
-    },
-    {
-      "romaji": "hitatsura",
-      "kanji": "皆焼",
-      "category": "hamon",
-      "definition": "Full temper; hardening that extends over most of the blade surface."
-    },
-    {
-      "romaji": "togariba",
-      "kanji": "尖り刃",
-      "category": "hamon",
-      "definition": "Pointed, angular peaks in the hamon."
-    },
-    {
-      "romaji": "togari-gunome",
-      "kanji": "尖り互の目",
-      "category": "hamon",
-      "definition": "Pointed gunome pattern."
-    },
-    {
-      "romaji": "kataochi-gunome",
-      "kanji": "片落互の目",
-      "category": "hamon",
-      "definition": "Lopsided gunome where one side drops more than the other."
-    },
-    {
-      "romaji": "sanbon-sugi",
-      "kanji": "三本杉",
-      "category": "hamon",
-      "definition": "Three-cedar pattern; groups of three pointed elements."
-    },
-    {
-      "romaji": "sudare-ba",
-      "kanji": "簾刃",
-      "category": "hamon",
-      "definition": "Bamboo-blind pattern; vertical streaks in the hamon."
-    },
-    {
-      "romaji": "ashi",
-      "kanji": "足",
-      "category": "hamon",
-      "definition": "Legs; short lines extending from the hamon toward the edge."
-    },
-    {
-      "romaji": "ko-ashi",
-      "kanji": "小足",
-      "category": "hamon",
-      "definition": "Small, short ashi."
-    },
-    {
-      "romaji": "saka-ashi",
-      "kanji": "逆足",
-      "category": "hamon",
-      "definition": "Reversed or slanting ashi."
-    },
-    {
-      "romaji": "yo",
-      "kanji": "葉",
-      "category": "hamon",
-      "definition": "Leaves; leaf-shaped formations in the hamon."
-    },
-    {
-      "romaji": "kinsuji",
-      "kanji": "金筋",
-      "category": "hamon",
-      "definition": "Golden lines; bright, shiny streaks in the hamon."
-    },
-    {
-      "romaji": "sunagashi",
-      "kanji": "砂流し",
-      "category": "hamon",
-      "definition": "Flowing sand; sweeping lines of nie in the hamon."
-    },
-    {
-      "romaji": "inazuma",
-      "kanji": "稲妻",
-      "category": "hamon",
-      "definition": "Lightning; bright zigzag lines in the hamon."
-    },
-    {
-      "romaji": "hotsure",
-      "kanji": "ほつれ",
-      "category": "hamon",
-      "definition": "Fraying; fine lines extending from the hamon into the ji."
-    },
-    {
-      "romaji": "uchinoke",
-      "kanji": "打除け",
-      "category": "hamon",
-      "definition": "Projections; areas where the hamon extends into the ji."
-    },
-    {
-      "romaji": "yubashiri",
-      "kanji": "湯走り",
-      "category": "hamon",
-      "definition": "Running water; isolated areas of nie in the ji above the hamon."
-    },
-    {
-      "romaji": "tobiyaki",
-      "kanji": "飛焼き",
-      "category": "hamon",
-      "definition": "Scattered tempering; isolated patches of hardening above the hamon."
-    },
-    {
-      "romaji": "muneyaki",
-      "kanji": "棟焼き",
-      "category": "hamon",
-      "definition": "Tempering along the back (mune) of the blade."
-    },
-    {
-      "romaji": "kuichigai-ba",
-      "kanji": "食違刃",
-      "category": "hamon",
-      "definition": "Offset pattern; hamon that appears to miss or skip."
-    },
-    {
-      "romaji": "nijuba",
-      "kanji": "二重刃",
-      "category": "hamon",
-      "definition": "Double-edge pattern; a secondary line parallel to the main hamon."
-    },
-    {
-      "romaji": "nie-kuzure",
-      "kanji": "沸崩れ",
-      "category": "hamon",
-      "definition": "Collapsed nie; areas where nie structure has broken down."
-    },
-    {
-      "romaji": "nie-suji",
-      "kanji": "沸筋",
-      "category": "hamon",
-      "definition": "Nie lines; streaks formed by concentrations of nie."
-    },
-    {
-      "romaji": "ha-nie",
-      "kanji": "刃沸",
-      "category": "hamon",
-      "definition": "Nie in the hardened edge area."
-    },
-    {
-      "romaji": "nioi-deki",
-      "kanji": "匂出来",
-      "category": "hamon",
-      "definition": "Made predominantly of nioi; a soft, misty hamon appearance."
-    },
-    {
-      "romaji": "nie-deki",
-      "kanji": "沸出来",
-      "category": "hamon",
-      "definition": "Made predominantly of nie; a bright, crystalline hamon appearance."
-    },
-    {
-      "romaji": "ko-nie-deki",
-      "kanji": "小沸出来",
-      "category": "hamon",
-      "definition": "Made predominantly of small nie."
-    },
-    {
-      "romaji": "nioi-gachi",
-      "kanji": "匂がち",
-      "category": "hamon",
-      "definition": "Nioi-dominant; more nioi than nie in the hamon."
-    },
-    {
-      "romaji": "nie-gachi",
-      "kanji": "沸がち",
-      "category": "hamon",
-      "definition": "Nie-dominant; more nie than nioi in the hamon."
-    },
-    {
-      "romaji": "saeru",
-      "kanji": "冴える",
-      "category": "hamon",
-      "definition": "Bright, clear, and vivid; describes a well-defined hamon."
-    },
-    {
-      "romaji": "shimaru",
-      "kanji": "締まる",
-      "category": "hamon",
-      "definition": "Tight; describes a compact, well-controlled hamon."
-    },
-    {
-      "romaji": "yakidashi",
-      "kanji": "焼出し",
-      "category": "hamon",
-      "definition": "The beginning of the hamon at the base of the blade."
-    },
-    {
-      "romaji": "yakiotoshi",
-      "kanji": "焼落し",
-      "category": "hamon",
-      "definition": "Area where the hamon drops below the ha-machi."
+      "romaji": "bonji",
+      "kanji": "梵字",
+      "category": "horimono",
+      "definition": "Sanskrit characters; Buddhist seed syllables."
     },
     {
       "romaji": "boshi",
@@ -901,184 +110,190 @@
       "definition": "The temper pattern in the kissaki (point) area."
     },
     {
-      "romaji": "kaeri",
-      "kanji": "返り",
-      "category": "boshi",
-      "definition": "The turn-back; where the boshi curves back along the mune."
+      "romaji": "chikei",
+      "kanji": "地景",
+      "category": "kitae",
+      "definition": "Dark lines in the ji created by concentrations of steel during folding."
     },
     {
-      "romaji": "ko-maru",
-      "kanji": "小丸",
-      "category": "boshi",
-      "definition": "Small, rounded turn-back."
+      "romaji": "Chikuzen",
+      "kanji": "筑前",
+      "category": "general",
+      "definition": "Chikuzen Province; a region in present-day Fukuoka Prefecture, home to the Samonji school."
     },
     {
-      "romaji": "o-maru",
-      "kanji": "大丸",
-      "category": "boshi",
-      "definition": "Large, rounded turn-back."
+      "romaji": "chirimen-hada",
+      "kanji": "縮緬肌",
+      "category": "kitae",
+      "definition": "Crepe-like texture, fine and tightly packed grain with a slightly rough appearance."
     },
     {
-      "romaji": "jizo-boshi",
-      "kanji": "地蔵帽子",
-      "category": "boshi",
-      "definition": "Jizo-head shape; a rounded boshi resembling the head of Jizo statues."
+      "romaji": "choji",
+      "kanji": "丁子",
+      "category": "hamon",
+      "definition": "Clove-shaped pattern resembling the clove spice bud."
     },
     {
-      "romaji": "yakizume",
-      "kanji": "焼詰め",
-      "category": "boshi",
-      "definition": "No turn-back; the hamon ends at the tip without returning."
+      "romaji": "choji-midare",
+      "kanji": "丁子乱れ",
+      "category": "hamon",
+      "definition": "Irregular clove pattern."
     },
     {
-      "romaji": "hakikake",
-      "kanji": "掃掛け",
-      "category": "boshi",
-      "definition": "Brush-swept; sweeping lines extending from the boshi."
+      "romaji": "chu-kissaki",
+      "kanji": "中切先",
+      "category": "sugata",
+      "definition": "A medium-sized point, the most common size."
     },
     {
-      "romaji": "midare-komi",
-      "kanji": "乱れ込み",
-      "category": "boshi",
-      "definition": "Irregular pattern continuing into the boshi."
+      "romaji": "chu-suguha",
+      "kanji": "中直刃",
+      "category": "hamon",
+      "definition": "Medium-width straight temper line; a suguha pattern of moderate width."
     },
     {
-      "romaji": "ichimai",
-      "kanji": "一枚",
-      "category": "boshi",
-      "definition": "Full temper; the entire kissaki area is hardened."
+      "romaji": "daimyo",
+      "kanji": "大名",
+      "category": "general",
+      "definition": "Feudal lord; provincial ruler."
     },
     {
-      "romaji": "kaen-boshi",
-      "kanji": "火炎帽子",
-      "category": "boshi",
-      "definition": "Flame-shaped boshi with flame-like patterns."
+      "romaji": "daisho",
+      "kanji": "大小",
+      "category": "blade_types",
+      "definition": "A matched pair of long and short swords (katana and wakizashi), symbol of samurai status."
     },
     {
-      "romaji": "togari-boshi",
-      "kanji": "尖り帽子",
-      "category": "boshi",
-      "definition": "Pointed boshi."
+      "romaji": "den",
+      "kanji": "伝",
+      "category": "documentation",
+      "definition": "Attributed to; traditional attribution without certainty."
     },
     {
-      "romaji": "nie-kuzure-boshi",
-      "kanji": "沸崩れ帽子",
-      "category": "boshi",
-      "definition": "Boshi with collapsed or disintegrated nie."
+      "romaji": "Echizen",
+      "kanji": "越前",
+      "category": "general",
+      "definition": "Echizen Province; a region in present-day Fukui Prefecture, known for Shinto-era smiths."
     },
     {
-      "romaji": "sugu",
-      "kanji": "直",
-      "category": "boshi",
-      "definition": "Straight; the boshi runs straight to the point."
+      "romaji": "Edo",
+      "kanji": "江戸",
+      "category": "general",
+      "definition": "Edo period (1603-1868); the era of peace under Tokugawa rule, when Shinto and later Shinshinto swords were made."
     },
     {
-      "romaji": "nakago",
-      "kanji": "茎",
+      "romaji": "Enju",
+      "kanji": "延寿",
+      "category": "schools",
+      "definition": "A Higo Province school active from Kamakura through Muromachi. Known for Yamato-influenced work."
+    },
+    {
+      "romaji": "Etchu",
+      "kanji": "越中",
+      "category": "general",
+      "definition": "Etchu Province; a region in present-day Toyama Prefecture, home to the Norishige line."
+    },
+    {
+      "romaji": "fuchi",
+      "kanji": "縁",
+      "category": "tosogu",
+      "definition": "The collar at the base of the handle, next to the guard."
+    },
+    {
+      "romaji": "fuchi-kashira",
+      "kanji": "縁頭",
+      "category": "tosogu",
+      "definition": "The fuchi and kashira as a matched set."
+    },
+    {
+      "romaji": "fukura",
+      "kanji": "ふくら",
+      "category": "sugata",
+      "definition": "The curve of the cutting edge in the kissaki area."
+    },
+    {
+      "romaji": "fukure",
+      "kanji": "膨れ",
+      "category": "assessment",
+      "definition": "Blister; a raised area caused by forging flaw."
+    },
+    {
+      "romaji": "fukurin",
+      "kanji": "覆輪",
+      "category": "metalwork",
+      "definition": "A metal rim or border."
+    },
+    {
+      "romaji": "funagata",
+      "kanji": "船形",
       "category": "nakago",
-      "definition": "The tang; the part of the blade that fits into the handle."
+      "definition": "Boat shape; a nakago (tang) shape with a curved profile resembling a boat's hull. Characteristic of Soshu tradition, especially Sadamune."
     },
     {
-      "romaji": "ubu",
-      "kanji": "生ぶ",
-      "category": "nakago",
-      "definition": "Original, unaltered tang; the blade has not been shortened."
+      "romaji": "funbari",
+      "kanji": "踏張り",
+      "category": "sugata",
+      "definition": "The tapering of the blade from base to point, giving a sturdy appearance at the base."
     },
     {
-      "romaji": "suriage",
-      "kanji": "磨上げ",
+      "romaji": "furisode-gata",
+      "kanji": "振袖形",
       "category": "nakago",
-      "definition": "Shortened tang; the blade has been cut down."
+      "definition": "Swinging-sleeve shape; a nakago (tang) shape with curved, flowing contours resembling a kimono sleeve. Common in Rai school and Soshu tradition works."
     },
     {
-      "romaji": "o-suriage",
-      "kanji": "大磨上げ",
-      "category": "nakago",
-      "definition": "Greatly shortened; significantly reduced in length."
+      "romaji": "futasuji-hi",
+      "kanji": "二筋樋",
+      "category": "horimono",
+      "definition": "Double groove; two parallel grooves."
     },
     {
-      "romaji": "machi-okuri",
-      "kanji": "区送り",
+      "romaji": "gaku-mei",
+      "kanji": "額銘",
       "category": "nakago",
-      "definition": "The machi has been moved; the blade shortened by moving the notches."
+      "definition": "Framed signature; the mei portion cut out and inset."
     },
     {
-      "romaji": "yasurime",
-      "kanji": "鑢目",
-      "category": "nakago",
-      "definition": "File marks on the tang."
+      "romaji": "gendaito",
+      "kanji": "現代刀",
+      "category": "schools",
+      "definition": "Modern sword; swords made after 1876."
     },
     {
-      "romaji": "kiri",
-      "kanji": "切",
-      "category": "nakago",
-      "definition": "Horizontal file marks."
+      "romaji": "gin-zogan",
+      "kanji": "銀象嵌",
+      "category": "metalwork",
+      "definition": "Silver inlay."
     },
     {
-      "romaji": "katte-sagari",
-      "kanji": "勝手下り",
-      "category": "nakago",
-      "definition": "Diagonal file marks slanting downward to the right."
+      "romaji": "gokaden",
+      "kanji": "五ヶ伝",
+      "category": "schools",
+      "definition": "The Five Traditions; the main sword-making schools (Yamashiro, Yamato, Bizen, Soshu, Mino)."
     },
     {
-      "romaji": "katte-agari",
-      "kanji": "勝手上り",
-      "category": "nakago",
-      "definition": "Diagonal file marks slanting upward to the right."
+      "romaji": "gomabashi",
+      "kanji": "護摩箸",
+      "category": "horimono",
+      "definition": "Ritual chopsticks; Buddhist implements used in fire ceremonies."
     },
     {
-      "romaji": "sujikai",
-      "kanji": "筋違",
-      "category": "nakago",
-      "definition": "Diagonal file marks."
+      "romaji": "gunome",
+      "kanji": "互の目",
+      "category": "hamon",
+      "definition": "Regular, repeated zigzag or sawtooth pattern."
     },
     {
-      "romaji": "o-sujikai",
-      "kanji": "大筋違",
-      "category": "nakago",
-      "definition": "Steeply angled diagonal file marks."
+      "romaji": "gunome-midare",
+      "kanji": "互の目乱れ",
+      "category": "hamon",
+      "definition": "Irregular gunome pattern."
     },
     {
-      "romaji": "suji-chigai",
-      "kanji": "筋違",
-      "category": "nakago",
-      "definition": "Cross-hatched or intersecting file marks."
-    },
-    {
-      "romaji": "takanoha",
-      "kanji": "鷹の羽",
-      "category": "nakago",
-      "definition": "Hawk-feather pattern; V-shaped file marks."
-    },
-    {
-      "romaji": "higaki",
-      "kanji": "檜垣",
-      "category": "nakago",
-      "definition": "Diamond lattice pattern file marks."
-    },
-    {
-      "romaji": "sensuki",
-      "kanji": "千鋤",
-      "category": "nakago",
-      "definition": "Lengthwise file marks parallel to the tang."
-    },
-    {
-      "romaji": "nakago-jiri",
-      "kanji": "茎尻",
-      "category": "nakago",
-      "definition": "The end/tip of the tang."
-    },
-    {
-      "romaji": "kurijiri",
-      "kanji": "栗尻",
-      "category": "nakago",
-      "definition": "Chestnut-shaped tang end; rounded."
-    },
-    {
-      "romaji": "kiri-jiri",
-      "kanji": "切尻",
-      "category": "nakago",
-      "definition": "Straight-cut tang end."
+      "romaji": "ha",
+      "kanji": "刃",
+      "category": "hamon",
+      "definition": "The cutting edge; also the hardened area of the blade."
     },
     {
       "romaji": "ha-agari kurijiri",
@@ -1087,70 +302,22 @@
       "definition": "Chestnut shape with the edge side higher."
     },
     {
-      "romaji": "iriyama-gata",
-      "kanji": "入山形",
+      "romaji": "ha-agari-kurijiri",
+      "kanji": "刃上り栗尻",
       "category": "nakago",
-      "definition": "Mountain-shaped tang end with a notch."
+      "definition": "Chestnut-shaped end with the edge side higher; a rounded nakago-jiri variant."
     },
     {
-      "romaji": "kengyō-jiri",
-      "kanji": "剣形尻",
-      "category": "nakago",
-      "definition": "Sword-tip shaped tang end."
+      "romaji": "ha-machi",
+      "kanji": "刃区",
+      "category": "sugata",
+      "definition": "The notch on the cutting edge side."
     },
     {
-      "romaji": "mekugi-ana",
-      "kanji": "目釘穴",
-      "category": "nakago",
-      "definition": "Peg hole(s) in the tang for securing the handle."
-    },
-    {
-      "romaji": "mei",
-      "kanji": "銘",
-      "category": "nakago",
-      "definition": "The signature inscribed on the tang."
-    },
-    {
-      "romaji": "mumei",
-      "kanji": "無銘",
-      "category": "nakago",
-      "definition": "Unsigned; no signature on the tang."
-    },
-    {
-      "romaji": "omote",
-      "kanji": "表",
-      "category": "nakago",
-      "definition": "The front or outer side (facing out when worn)."
-    },
-    {
-      "romaji": "ura",
-      "kanji": "裏",
-      "category": "nakago",
-      "definition": "The back or inner side (facing the body when worn)."
-    },
-    {
-      "romaji": "sashi-omote",
-      "kanji": "差表",
-      "category": "nakago",
-      "definition": "The outer side when the blade is thrust through the belt (for katana)."
-    },
-    {
-      "romaji": "sashi-ura",
-      "kanji": "差裏",
-      "category": "nakago",
-      "definition": "The inner side when the blade is thrust through the belt."
-    },
-    {
-      "romaji": "haki-omote",
-      "kanji": "佩表",
-      "category": "nakago",
-      "definition": "The outer side when the blade is suspended (for tachi)."
-    },
-    {
-      "romaji": "haki-ura",
-      "kanji": "佩裏",
-      "category": "nakago",
-      "definition": "The inner side when the blade is suspended."
+      "romaji": "ha-nie",
+      "kanji": "刃沸",
+      "category": "hamon",
+      "definition": "Nie in the hardened edge area."
     },
     {
       "romaji": "ha-omote",
@@ -1165,34 +332,76 @@
       "definition": "The side of the tang where the edge faces inward."
     },
     {
-      "romaji": "kinzogan-mei",
-      "kanji": "金象嵌銘",
-      "category": "nakago",
-      "definition": "Gold-inlaid signature; attribution added in gold inlay."
+      "romaji": "habaki",
+      "kanji": "鎺",
+      "category": "koshirae",
+      "definition": "The blade collar that secures the sword in the scabbard."
     },
     {
-      "romaji": "shu-mei",
-      "kanji": "朱銘",
-      "category": "nakago",
-      "definition": "Red lacquer signature; attribution in red lacquer."
+      "romaji": "habuchi",
+      "kanji": "刃縁",
+      "category": "hamon",
+      "definition": "The boundary line of the hamon; the edge of the tempered area."
     },
     {
-      "romaji": "orikaeshi-mei",
-      "kanji": "折返銘",
-      "category": "nakago",
-      "definition": "Folded-back signature; the original mei preserved when shortening."
-    },
-    {
-      "romaji": "gaku-mei",
-      "kanji": "額銘",
-      "category": "nakago",
-      "definition": "Framed signature; the mei portion cut out and inset."
-    },
-    {
-      "romaji": "horimono",
-      "kanji": "彫物",
+      "romaji": "hachiman daibosatsu",
+      "kanji": "八幡大菩薩",
       "category": "horimono",
-      "definition": "Carvings or engravings on the blade."
+      "definition": "Great Bodhisattva Hachiman; the Shinto-Buddhist deity of war, invoked in blade inscriptions."
+    },
+    {
+      "romaji": "hada",
+      "kanji": "肌",
+      "category": "kitae",
+      "definition": "Grain; the pattern visible in the steel from the folding process."
+    },
+    {
+      "romaji": "hadatatsu",
+      "kanji": "肌立つ",
+      "category": "kitae",
+      "definition": "Standing grain; visible and pronounced hada pattern on the blade surface."
+    },
+    {
+      "romaji": "hagire",
+      "kanji": "刃切れ",
+      "category": "assessment",
+      "definition": "Edge crack; a crack in the hardened edge."
+    },
+    {
+      "romaji": "haki-omote",
+      "kanji": "佩表",
+      "category": "nakago",
+      "definition": "The outer side when the blade is suspended (for tachi)."
+    },
+    {
+      "romaji": "haki-ura",
+      "kanji": "佩裏",
+      "category": "nakago",
+      "definition": "The inner side when the blade is suspended."
+    },
+    {
+      "romaji": "hakikake",
+      "kanji": "掃掛け",
+      "category": "boshi",
+      "definition": "Brush-swept; sweeping lines extending from the boshi."
+    },
+    {
+      "romaji": "hamon",
+      "kanji": "刃文",
+      "category": "hamon",
+      "definition": "The temper line pattern visible along the edge, created by differential hardening."
+    },
+    {
+      "romaji": "Hatakeda",
+      "kanji": "畠田",
+      "category": "schools",
+      "definition": "A Yamato school near Hatakeda. Known for masame-heavy forging patterns."
+    },
+    {
+      "romaji": "Heian",
+      "kanji": "平安",
+      "category": "general",
+      "definition": "Heian period (794-1185); the era of court culture when Japanese sword-making traditions developed."
     },
     {
       "romaji": "hi",
@@ -1201,76 +410,274 @@
       "definition": "Groove carved into the blade."
     },
     {
-      "romaji": "bo-hi",
-      "kanji": "棒樋",
-      "category": "horimono",
-      "definition": "Single straight groove."
+      "romaji": "higaki",
+      "kanji": "檜垣",
+      "category": "nakago",
+      "definition": "Diamond lattice pattern file marks."
     },
     {
-      "romaji": "futasuji-hi",
-      "kanji": "二筋樋",
-      "category": "horimono",
-      "definition": "Double groove; two parallel grooves."
+      "romaji": "Higo",
+      "kanji": "肥後",
+      "category": "general",
+      "definition": "Higo Province; a region in present-day Kumamoto Prefecture, home to the Enju school."
     },
     {
-      "romaji": "soe-hi",
-      "kanji": "添樋",
-      "category": "horimono",
-      "definition": "Companion groove; a shorter groove alongside another."
+      "romaji": "hira-ji",
+      "kanji": "平地",
+      "category": "sugata",
+      "definition": "The flat area between the shinogi and the hamon."
     },
     {
-      "romaji": "koshi-hi",
-      "kanji": "腰樋",
-      "category": "horimono",
-      "definition": "Short groove in the lower part of the blade."
+      "romaji": "hira-zukuri",
+      "kanji": "平造",
+      "category": "sugata",
+      "definition": "Flat construction without a shinogi ridge, common on tanto and some wakizashi."
     },
     {
-      "romaji": "bonji",
-      "kanji": "梵字",
-      "category": "horimono",
-      "definition": "Sanskrit characters; Buddhist seed syllables."
+      "romaji": "hiramaki-e",
+      "kanji": "平蒔絵",
+      "category": "lacquer",
+      "definition": "Flat sprinkled picture; maki-e level with the surface."
     },
     {
-      "romaji": "kurikara",
-      "kanji": "倶利伽羅",
-      "category": "horimono",
-      "definition": "Dragon coiled around a sword; Buddhist deity representation."
+      "romaji": "hirami-sankaku-zukuri",
+      "kanji": "平三角造",
+      "category": "sugata",
+      "definition": "Flat-triangular construction; a rare blade form with flat sides meeting at a ridge."
     },
     {
-      "romaji": "ken",
-      "kanji": "剣",
-      "category": "horimono",
-      "definition": "Sword carving; depiction of a Buddhist ritual sword."
+      "romaji": "hiraniku",
+      "kanji": "平肉",
+      "category": "sugata",
+      "definition": "The convexity or 'meat' of the blade surface, indicating health and remaining material."
     },
     {
-      "romaji": "suken",
-      "kanji": "素剣",
-      "category": "horimono",
-      "definition": "Plain sword; simple sword carving without elaborate details."
+      "romaji": "hiro-suguha",
+      "kanji": "広直刃",
+      "category": "hamon",
+      "definition": "Wide straight temper line; a suguha pattern of broad width."
     },
     {
-      "romaji": "gomabashi",
-      "kanji": "護摩箸",
-      "category": "horimono",
-      "definition": "Ritual chopsticks; Buddhist implements used in fire ceremonies."
+      "romaji": "hitatsura",
+      "kanji": "皆焼",
+      "category": "hamon",
+      "definition": "Full temper; hardening that extends over most of the blade surface."
     },
     {
-      "romaji": "rendai",
-      "kanji": "蓮台",
-      "category": "horimono",
-      "definition": "Lotus pedestal; Buddhist lotus throne carving."
+      "romaji": "Hizen",
+      "kanji": "肥前",
+      "category": "general",
+      "definition": "Hizen Province; a region in present-day Saga/Nagasaki Prefectures, home to the Tadayoshi school."
     },
     {
-      "romaji": "tsume",
-      "kanji": "爪",
+      "romaji": "hoju",
+      "kanji": "宝珠",
       "category": "horimono",
-      "definition": "Claw or talon carving."
+      "definition": "Sacred jewel; a Buddhist wish-fulfilling gem motif carved on blades."
     },
     {
-      "romaji": "koshi-bi",
-      "kanji": "腰樋",
+      "romaji": "Horikawa",
+      "kanji": "堀川",
+      "category": "schools",
+      "definition": "A Shinto-era Yamashiro school, founded by Horikawa Kunihiro. Active in early Edo period."
+    },
+    {
+      "romaji": "horimono",
+      "kanji": "彫物",
       "category": "horimono",
-      "definition": "Short groove in the lower blade section."
+      "definition": "Carvings or engravings on the blade."
+    },
+    {
+      "romaji": "hoso-suguha",
+      "kanji": "細直刃",
+      "category": "hamon",
+      "definition": "Narrow straight temper line; a suguha pattern of slender width."
+    },
+    {
+      "romaji": "hotsure",
+      "kanji": "ほつれ",
+      "category": "hamon",
+      "definition": "Fraying; fine lines extending from the hamon into the ji."
+    },
+    {
+      "romaji": "Hyuga",
+      "kanji": "日向",
+      "category": "general",
+      "definition": "Hyuga Province; a region in present-day Miyazaki Prefecture."
+    },
+    {
+      "romaji": "ichimai",
+      "kanji": "一枚",
+      "category": "boshi",
+      "definition": "Full temper; the entire kissaki area is hardened."
+    },
+    {
+      "romaji": "ichimonji",
+      "kanji": "一文字",
+      "category": "schools",
+      "definition": "One-character; famous Bizen school signing with the character 'ichi'."
+    },
+    {
+      "romaji": "ikubi-kissaki",
+      "kanji": "猪首切先",
+      "category": "sugata",
+      "definition": "A stubby, boar-neck shaped point, characteristic of certain Kamakura blades."
+    },
+    {
+      "romaji": "inazuma",
+      "kanji": "稲妻",
+      "category": "hamon",
+      "definition": "Lightning; bright zigzag lines in the hamon."
+    },
+    {
+      "romaji": "iori-mune",
+      "kanji": "庵棟",
+      "category": "sugata",
+      "definition": "A peaked or roof-shaped back, the most common form."
+    },
+    {
+      "romaji": "iriyama",
+      "kanji": "入山形",
+      "category": "nakago",
+      "definition": "Entering-mountain shape; the nakago-jiri has an angular, mountain-like profile."
+    },
+    {
+      "romaji": "iriyama-gata",
+      "kanji": "入山形",
+      "category": "nakago",
+      "definition": "Mountain-shaped tang end with a notch."
+    },
+    {
+      "romaji": "iroe",
+      "kanji": "色絵",
+      "category": "metalwork",
+      "definition": "Colored metalwork; polychrome inlay using various metals."
+    },
+    {
+      "romaji": "Ise",
+      "kanji": "伊勢",
+      "category": "general",
+      "definition": "Ise Province; a region in present-day Mie Prefecture, associated with Muramasa."
+    },
+    {
+      "romaji": "ishime-ji",
+      "kanji": "石目地",
+      "category": "lacquer",
+      "definition": "Stone-surface ground; textured lacquer resembling stone."
+    },
+    {
+      "romaji": "itame",
+      "kanji": "板目",
+      "category": "kitae",
+      "definition": "Wood-grain pattern in the steel, resembling the grain of a wooden plank."
+    },
+    {
+      "romaji": "itame-hada",
+      "kanji": "板目肌",
+      "category": "kitae",
+      "definition": "Wood-grain pattern skin/surface."
+    },
+    {
+      "romaji": "itomaki tachi",
+      "kanji": "糸巻太刀",
+      "category": "koshirae",
+      "definition": "Thread-wrapped tachi; formal tachi with wrapped scabbard sections."
+    },
+    {
+      "romaji": "ji",
+      "kanji": "地",
+      "category": "kitae",
+      "definition": "The surface area of the blade between the shinogi and the hamon."
+    },
+    {
+      "romaji": "ji-nie",
+      "kanji": "地沸",
+      "category": "kitae",
+      "definition": "Martensite crystals visible in the ji (surface) area, appearing as bright spots."
+    },
+    {
+      "romaji": "ji-sukashi",
+      "kanji": "地透",
+      "category": "metalwork",
+      "definition": "Positive silhouette openwork."
+    },
+    {
+      "romaji": "jifu",
+      "kanji": "地斑",
+      "category": "kitae",
+      "definition": "Dark patches or mottling in the ji area."
+    },
+    {
+      "romaji": "jifu-utsuri",
+      "kanji": "地斑映り",
+      "category": "kitae",
+      "definition": "Mottled, patchy utsuri pattern."
+    },
+    {
+      "romaji": "jigane",
+      "kanji": "地鉄",
+      "category": "kitae",
+      "definition": "The base steel of the blade; the steel quality and character."
+    },
+    {
+      "romaji": "jihada",
+      "kanji": "地肌",
+      "category": "kitae",
+      "definition": "The surface grain pattern visible on the blade, created by folding."
+    },
+    {
+      "romaji": "jitetsu",
+      "kanji": "地鉄",
+      "category": "kitae",
+      "definition": "Same as jigane; the steel of the blade body."
+    },
+    {
+      "romaji": "jizo-boshi",
+      "kanji": "地蔵帽子",
+      "category": "boshi",
+      "definition": "Jizo-head shape; a rounded boshi resembling the head of Jizo statues."
+    },
+    {
+      "romaji": "juka-choji",
+      "kanji": "重花丁子",
+      "category": "hamon",
+      "definition": "Overlapping, complex clove pattern."
+    },
+    {
+      "romaji": "juyo",
+      "kanji": "重要",
+      "category": "documentation",
+      "definition": "Important; NBTHK designation for significant blades."
+    },
+    {
+      "romaji": "kabura-otoshi-zukuri",
+      "kanji": "蕪落造",
+      "category": "sugata",
+      "definition": "Turnip-drop construction; similar to kanmuri-otoshi but with a more pronounced drop near the mune."
+    },
+    {
+      "romaji": "kaen-boshi",
+      "kanji": "火炎帽子",
+      "category": "boshi",
+      "definition": "Flame-shaped boshi with flame-like patterns."
+    },
+    {
+      "romaji": "kaeri",
+      "kanji": "返り",
+      "category": "boshi",
+      "definition": "The turn-back; where the boshi curves back along the mune."
+    },
+    {
+      "romaji": "Kaga",
+      "kanji": "加賀",
+      "category": "general",
+      "definition": "Kaga Province; a region in present-day Ishikawa Prefecture, known for fine koshirae."
+    },
+    {
+      "romaji": "kaki-toshi",
+      "kanji": "掻通し",
+      "category": "horimono",
+      "definition": "Same as kakitoshi; through-groove to tang end."
     },
     {
       "romaji": "kakinagashi",
@@ -1285,124 +692,46 @@
       "definition": "Groove that runs through to the tang end."
     },
     {
-      "romaji": "kaki-toshi",
-      "kanji": "掻通し",
-      "category": "horimono",
-      "definition": "Same as kakitoshi; through-groove to tang end."
-    },
-    {
-      "romaji": "maru-dome",
-      "kanji": "丸留め",
-      "category": "horimono",
-      "definition": "Round termination; groove ending in a rounded shape."
-    },
-    {
       "romaji": "kaku-dome",
       "kanji": "角留め",
       "category": "horimono",
       "definition": "Square termination; groove ending in a square shape."
     },
     {
-      "romaji": "koshirae",
-      "kanji": "拵",
-      "category": "koshirae",
-      "definition": "Mountings; the complete set of fittings and furniture for a sword."
+      "romaji": "kaku-mune",
+      "kanji": "角棟",
+      "category": "sugata",
+      "definition": "A flat, square back."
     },
     {
-      "romaji": "tachi koshirae",
-      "kanji": "太刀拵",
-      "category": "koshirae",
-      "definition": "Tachi-style mountings for a suspended sword."
+      "romaji": "Kamakura",
+      "kanji": "鎌倉",
+      "category": "general",
+      "definition": "Kamakura period (1185-1333); the golden age of Japanese sword-making under samurai rule."
     },
     {
-      "romaji": "uchigatana koshirae",
-      "kanji": "打刀拵",
-      "category": "koshirae",
-      "definition": "Katana-style mountings for a thrust-through-belt sword."
+      "romaji": "kanmuri-otoshi-zukuri",
+      "kanji": "冠落造",
+      "category": "sugata",
+      "definition": "A blade form where the back is beveled near the point."
     },
     {
-      "romaji": "aikuchi",
-      "kanji": "合口",
-      "category": "koshirae",
-      "definition": "Mountings without a tsuba (guard), typically for tanto."
+      "romaji": "kao",
+      "kanji": "花押",
+      "category": "documentation",
+      "definition": "Stylized signature or monogram."
     },
     {
-      "romaji": "itomaki tachi",
-      "kanji": "糸巻太刀",
-      "category": "koshirae",
-      "definition": "Thread-wrapped tachi; formal tachi with wrapped scabbard sections."
+      "romaji": "kasane",
+      "kanji": "重ね",
+      "category": "sugata",
+      "definition": "The thickness of the blade at the back (mune)."
     },
     {
-      "romaji": "saya",
-      "kanji": "鞘",
-      "category": "koshirae",
-      "definition": "Scabbard; the sheath that holds the blade."
-    },
-    {
-      "romaji": "tsuka",
-      "kanji": "柄",
-      "category": "koshirae",
-      "definition": "Handle; the grip portion of the sword."
-    },
-    {
-      "romaji": "same",
-      "kanji": "鮫",
-      "category": "koshirae",
-      "definition": "Rayskin; the textured skin used to wrap handles."
-    },
-    {
-      "romaji": "tsuka-ito",
-      "kanji": "柄糸",
-      "category": "koshirae",
-      "definition": "Handle wrapping cord; the braid wrapped over the same."
-    },
-    {
-      "romaji": "sageo",
-      "kanji": "下緒",
-      "category": "koshirae",
-      "definition": "The cord attached to the scabbard for securing to the belt."
-    },
-    {
-      "romaji": "kurikata",
-      "kanji": "栗形",
-      "category": "koshirae",
-      "definition": "The knob on the scabbard through which the sageo passes."
-    },
-    {
-      "romaji": "kojiri",
-      "kanji": "鐺",
-      "category": "koshirae",
-      "definition": "The end cap of the scabbard."
-    },
-    {
-      "romaji": "koiguchi",
-      "kanji": "鯉口",
-      "category": "koshirae",
-      "definition": "The mouth of the scabbard; where the blade enters."
-    },
-    {
-      "romaji": "habaki",
-      "kanji": "鎺",
-      "category": "koshirae",
-      "definition": "The blade collar that secures the sword in the scabbard."
-    },
-    {
-      "romaji": "seppa",
-      "kanji": "切羽",
-      "category": "koshirae",
-      "definition": "Spacers placed on either side of the tsuba."
-    },
-    {
-      "romaji": "tsuba",
-      "kanji": "鍔",
-      "category": "tosogu",
-      "definition": "The sword guard."
-    },
-    {
-      "romaji": "fuchi",
-      "kanji": "縁",
-      "category": "tosogu",
-      "definition": "The collar at the base of the handle, next to the guard."
+      "romaji": "kasane-bori",
+      "kanji": "重ね彫",
+      "category": "horimono",
+      "definition": "Layered carving; a technique where multiple carved elements overlap."
     },
     {
       "romaji": "kashira",
@@ -1411,22 +740,286 @@
       "definition": "The pommel cap at the end of the handle."
     },
     {
-      "romaji": "fuchi-kashira",
-      "kanji": "縁頭",
-      "category": "tosogu",
-      "definition": "The fuchi and kashira as a matched set."
+      "romaji": "katakiriba-zukuri",
+      "kanji": "片切刃造",
+      "category": "sugata",
+      "definition": "Single-beveled edge construction; one side flat like a chisel, rare on swords but common on some tanto."
     },
     {
-      "romaji": "menuki",
-      "kanji": "目貫",
-      "category": "tosogu",
-      "definition": "Ornamental grip fittings placed under the handle wrapping."
+      "romaji": "katakiribori",
+      "kanji": "片切彫",
+      "category": "metalwork",
+      "definition": "One-sided chisel carving; beveled line engraving."
     },
     {
-      "romaji": "kozuka",
-      "kanji": "小柄",
-      "category": "tosogu",
-      "definition": "A small utility knife fitted into the scabbard."
+      "romaji": "katana",
+      "kanji": "刀",
+      "category": "blade_types",
+      "definition": "A long sword worn edge-up, thrust through the belt. Became standard from the Muromachi period onward."
+    },
+    {
+      "romaji": "kataochi-gunome",
+      "kanji": "片落互の目",
+      "category": "hamon",
+      "definition": "Lopsided gunome where one side drops more than the other."
+    },
+    {
+      "romaji": "katte-agari",
+      "kanji": "勝手上り",
+      "category": "nakago",
+      "definition": "Diagonal file marks slanting upward to the right."
+    },
+    {
+      "romaji": "katte-sagari",
+      "kanji": "勝手下り",
+      "category": "nakago",
+      "definition": "Diagonal file marks slanting downward to the right."
+    },
+    {
+      "romaji": "kawazu-ko choji",
+      "kanji": "蛙子丁子",
+      "category": "hamon",
+      "definition": "Tadpole-head choji; cloves with bulbous heads like tadpoles."
+    },
+    {
+      "romaji": "kebori",
+      "kanji": "毛彫",
+      "category": "metalwork",
+      "definition": "Hair-line engraving; fine incised lines."
+    },
+    {
+      "romaji": "ken",
+      "kanji": "剣",
+      "category": "blade_types",
+      "definition": "A double-edged straight sword, often with religious or ceremonial significance."
+    },
+    {
+      "romaji": "ken",
+      "kanji": "剣",
+      "category": "horimono",
+      "definition": "Sword carving; depiction of a Buddhist ritual sword."
+    },
+    {
+      "romaji": "kengyo",
+      "kanji": "剣形",
+      "category": "nakago",
+      "definition": "Sword-tip shape; the nakago-jiri ends in a pointed, sword-like form."
+    },
+    {
+      "romaji": "kengyō-jiri",
+      "kanji": "剣形尻",
+      "category": "nakago",
+      "definition": "Sword-tip shaped tang end."
+    },
+    {
+      "romaji": "kenuki-bori",
+      "kanji": "毛抜彫",
+      "category": "horimono",
+      "definition": "Tweezers carving; a decorative pattern resembling tweezers or hair-pulling implements."
+    },
+    {
+      "romaji": "kenzen",
+      "kanji": "健全",
+      "category": "assessment",
+      "definition": "Healthy; well-preserved condition with minimal wear."
+    },
+    {
+      "romaji": "kesho-yasurime",
+      "kanji": "化粧鑢目",
+      "category": "nakago",
+      "definition": "Decorative file marks; ornamental yasurime added for aesthetic effect rather than functional finishing."
+    },
+    {
+      "romaji": "Kii",
+      "kanji": "紀伊",
+      "category": "general",
+      "definition": "Kii Province; a region in present-day Wakayama Prefecture."
+    },
+    {
+      "romaji": "kijimomo",
+      "kanji": "雉子股",
+      "category": "nakago",
+      "definition": "Pheasant thigh; refers to the distinctive tapering shape seen in early Heian to Kamakura period nakago."
+    },
+    {
+      "romaji": "kijimomo-gata",
+      "kanji": "雉子股型",
+      "category": "nakago",
+      "definition": "Pheasant-thigh shape; a nakago (tang) shape that tapers like a pheasant's thigh, characteristic of early tachi."
+    },
+    {
+      "romaji": "kiku-mon",
+      "kanji": "菊紋",
+      "category": "general",
+      "definition": "Chrysanthemum crest; the Imperial emblem."
+    },
+    {
+      "romaji": "kin-iroe",
+      "kanji": "金色絵",
+      "category": "metalwork",
+      "definition": "Gold-colored metalwork."
+    },
+    {
+      "romaji": "kin-nashiji",
+      "kanji": "金梨子地",
+      "category": "lacquer",
+      "definition": "Gold pear-skin ground."
+    },
+    {
+      "romaji": "kin-zogan",
+      "kanji": "金象嵌",
+      "category": "metalwork",
+      "definition": "Gold inlay."
+    },
+    {
+      "romaji": "kinsuji",
+      "kanji": "金筋",
+      "category": "hamon",
+      "definition": "Golden lines; bright, shiny streaks in the hamon."
+    },
+    {
+      "romaji": "kinzogan-mei",
+      "kanji": "金象嵌銘",
+      "category": "nakago",
+      "definition": "Gold-inlaid signature; attribution added in gold inlay."
+    },
+    {
+      "romaji": "kiri",
+      "kanji": "切",
+      "category": "nakago",
+      "definition": "Horizontal file marks."
+    },
+    {
+      "romaji": "kiri-jiri",
+      "kanji": "切尻",
+      "category": "nakago",
+      "definition": "Straight-cut tang end."
+    },
+    {
+      "romaji": "kiri-mon",
+      "kanji": "桐紋",
+      "category": "general",
+      "definition": "Paulownia crest; an imperial and government emblem."
+    },
+    {
+      "romaji": "kiriba-zukuri",
+      "kanji": "切刃造",
+      "category": "sugata",
+      "definition": "An ancient blade form with a triangular cross-section, found mainly on early ken."
+    },
+    {
+      "romaji": "kissaki",
+      "kanji": "切先",
+      "category": "sugata",
+      "definition": "The point or tip section of the blade."
+    },
+    {
+      "romaji": "kitae",
+      "kanji": "鍛え",
+      "category": "kitae",
+      "definition": "Forging; the process of folding and welding the steel to create the blade."
+    },
+    {
+      "romaji": "kitae-ware",
+      "kanji": "鍛え割れ",
+      "category": "assessment",
+      "definition": "Forging crack; separation in the laminated steel."
+    },
+    {
+      "romaji": "kiwame",
+      "kanji": "極め",
+      "category": "documentation",
+      "definition": "Expert attribution; formal appraisal of unsigned blades."
+    },
+    {
+      "romaji": "kizu",
+      "kanji": "傷",
+      "category": "assessment",
+      "definition": "Flaw; defect or damage in the blade."
+    },
+    {
+      "romaji": "ko-aoe",
+      "kanji": "古青江",
+      "category": "schools",
+      "definition": "Old Aoe; early Bitchu school work."
+    },
+    {
+      "romaji": "ko-ashi",
+      "kanji": "小足",
+      "category": "hamon",
+      "definition": "Small, short ashi."
+    },
+    {
+      "romaji": "ko-bizen",
+      "kanji": "古備前",
+      "category": "schools",
+      "definition": "Old Bizen; early Bizen school work before Ichimonji."
+    },
+    {
+      "romaji": "ko-choji",
+      "kanji": "小丁子",
+      "category": "hamon",
+      "definition": "Small clove pattern."
+    },
+    {
+      "romaji": "ko-gunome",
+      "kanji": "小互の目",
+      "category": "hamon",
+      "definition": "Small gunome pattern."
+    },
+    {
+      "romaji": "ko-itame",
+      "kanji": "小板目",
+      "category": "kitae",
+      "definition": "Fine, small wood-grain pattern."
+    },
+    {
+      "romaji": "ko-kissaki",
+      "kanji": "小切先",
+      "category": "sugata",
+      "definition": "A small point, typical of Heian and early Kamakura period blades."
+    },
+    {
+      "romaji": "ko-maru",
+      "kanji": "小丸",
+      "category": "boshi",
+      "definition": "Small, rounded turn-back."
+    },
+    {
+      "romaji": "ko-midare",
+      "kanji": "小乱れ",
+      "category": "hamon",
+      "definition": "Small irregular pattern."
+    },
+    {
+      "romaji": "ko-mokume",
+      "kanji": "小杢目",
+      "category": "kitae",
+      "definition": "Fine, small burl-grain pattern."
+    },
+    {
+      "romaji": "ko-nie",
+      "kanji": "小沸",
+      "category": "kitae",
+      "definition": "Small, fine nie particles."
+    },
+    {
+      "romaji": "ko-nie-deki",
+      "kanji": "小沸出来",
+      "category": "hamon",
+      "definition": "Made predominantly of small nie."
+    },
+    {
+      "romaji": "ko-notare",
+      "kanji": "小湾れ",
+      "category": "hamon",
+      "definition": "Small, gentle wave pattern."
+    },
+    {
+      "romaji": "kodachi",
+      "kanji": "小太刀",
+      "category": "blade_types",
+      "definition": "A short tachi, smaller than a standard tachi but larger than a wakizashi."
     },
     {
       "romaji": "kogai",
@@ -1435,40 +1028,376 @@
       "definition": "A hair-arranging implement fitted into the scabbard."
     },
     {
+      "romaji": "koiguchi",
+      "kanji": "鯉口",
+      "category": "koshirae",
+      "definition": "The mouth of the scabbard; where the blade enters."
+    },
+    {
+      "romaji": "kojiri",
+      "kanji": "鐺",
+      "category": "koshirae",
+      "definition": "The end cap of the scabbard."
+    },
+    {
+      "romaji": "koshi-bi",
+      "kanji": "腰樋",
+      "category": "horimono",
+      "definition": "Short groove in the lower blade section."
+    },
+    {
+      "romaji": "koshi-hi",
+      "kanji": "腰樋",
+      "category": "horimono",
+      "definition": "Short groove in the lower part of the blade."
+    },
+    {
+      "romaji": "koshirae",
+      "kanji": "拵",
+      "category": "koshirae",
+      "definition": "Mountings; the complete set of fittings and furniture for a sword."
+    },
+    {
+      "romaji": "koshizori",
+      "kanji": "腰反り",
+      "category": "sugata",
+      "definition": "Curvature concentrated near the base of the blade, typical of early tachi."
+    },
+    {
+      "romaji": "koto",
+      "kanji": "古刀",
+      "category": "schools",
+      "definition": "Old sword; blades made before approximately 1596."
+    },
+    {
+      "romaji": "kozuka",
+      "kanji": "小柄",
+      "category": "tosogu",
+      "definition": "A small utility knife fitted into the scabbard."
+    },
+    {
+      "romaji": "kuichigai-ba",
+      "kanji": "食違刃",
+      "category": "hamon",
+      "definition": "Offset pattern; hamon that appears to miss or skip."
+    },
+    {
+      "romaji": "kurijiri",
+      "kanji": "栗尻",
+      "category": "nakago",
+      "definition": "Chestnut-shaped tang end; rounded."
+    },
+    {
+      "romaji": "kurikara",
+      "kanji": "倶利伽羅",
+      "category": "horimono",
+      "definition": "Dragon coiled around a sword; Buddhist deity representation."
+    },
+    {
+      "romaji": "kurikata",
+      "kanji": "栗形",
+      "category": "koshirae",
+      "definition": "The knob on the scabbard through which the sageo passes."
+    },
+    {
+      "romaji": "kuro-urushi",
+      "kanji": "黒漆",
+      "category": "lacquer",
+      "definition": "Black lacquer."
+    },
+    {
+      "romaji": "kuwagata",
+      "kanji": "鍬形",
+      "category": "horimono",
+      "definition": "Antler or stag-beetle horn shape; a decorative V-shaped element found in carvings and helmet crests."
+    },
+    {
+      "romaji": "machi",
+      "kanji": "区",
+      "category": "sugata",
+      "definition": "The notches at the base of the blade where it meets the tang."
+    },
+    {
+      "romaji": "machi-okuri",
+      "kanji": "区送り",
+      "category": "nakago",
+      "definition": "The machi has been moved; the blade shortened by moving the notches."
+    },
+    {
+      "romaji": "maki-e",
+      "kanji": "蒔絵",
+      "category": "lacquer",
+      "definition": "Sprinkled picture; lacquer technique using gold/silver powder."
+    },
+    {
+      "romaji": "marishiten",
+      "kanji": "摩利支天",
+      "category": "horimono",
+      "definition": "Marici; a Buddhist deity of light and invisibility, carved on blades for protection."
+    },
+    {
+      "romaji": "maru-dome",
+      "kanji": "丸留め",
+      "category": "horimono",
+      "definition": "Round termination; groove ending in a rounded shape."
+    },
+    {
+      "romaji": "maru-mune",
+      "kanji": "丸棟",
+      "category": "sugata",
+      "definition": "A rounded back."
+    },
+    {
+      "romaji": "masame",
+      "kanji": "柾目",
+      "category": "kitae",
+      "definition": "Straight grain pattern running parallel to the blade length."
+    },
+    {
+      "romaji": "masame-hada",
+      "kanji": "柾目肌",
+      "category": "kitae",
+      "definition": "Straight grain pattern skin/surface."
+    },
+    {
+      "romaji": "mei",
+      "kanji": "銘",
+      "category": "nakago",
+      "definition": "The signature inscribed on the tang."
+    },
+    {
+      "romaji": "meibutsu",
+      "kanji": "名物",
+      "category": "documentation",
+      "definition": "Famous blade; a sword of exceptional fame and quality."
+    },
+    {
+      "romaji": "meikan",
+      "kanji": "銘鑑",
+      "category": "documentation",
+      "definition": "Register of signatures; reference book of smith signatures."
+    },
+    {
+      "romaji": "mekugi-ana",
+      "kanji": "目釘穴",
+      "category": "nakago",
+      "definition": "Peg hole(s) in the tang for securing the handle."
+    },
+    {
+      "romaji": "menuki",
+      "kanji": "目貫",
+      "category": "tosogu",
+      "definition": "Ornamental grip fittings placed under the handle wrapping."
+    },
+    {
+      "romaji": "midare",
+      "kanji": "乱れ",
+      "category": "hamon",
+      "definition": "Irregular, mixed temper pattern."
+    },
+    {
+      "romaji": "midare-komi",
+      "kanji": "乱れ込み",
+      "category": "boshi",
+      "definition": "Irregular pattern continuing into the boshi."
+    },
+    {
+      "romaji": "midare-utsuri",
+      "kanji": "乱映り",
+      "category": "kitae",
+      "definition": "Irregular, wavy utsuri pattern that mirrors the hamon."
+    },
+    {
+      "romaji": "midareba",
+      "kanji": "乱刃",
+      "category": "hamon",
+      "definition": "Irregular temper line; general term for non-straight hamon."
+    },
+    {
+      "romaji": "mihaba",
+      "kanji": "身幅",
+      "category": "sugata",
+      "definition": "The width of the blade."
+    },
+    {
+      "romaji": "Mihara",
+      "kanji": "三原",
+      "category": "schools",
+      "definition": "A Bingo Province school active from Kamakura through Muromachi. Known for tight ko-itame and refined suguha."
+    },
+    {
+      "romaji": "Mikawa",
+      "kanji": "三河",
+      "category": "general",
+      "definition": "Mikawa Province; a region in present-day eastern Aichi Prefecture."
+    },
+    {
+      "romaji": "Mino",
+      "kanji": "美濃",
+      "category": "general",
+      "definition": "Mino Province; a region in present-day Gifu Prefecture, one of the Five Traditions (Gokaden)."
+    },
+    {
+      "romaji": "Mishina",
+      "kanji": "三品",
+      "category": "schools",
+      "definition": "A Yamashiro school of the Shinto era, known for elegant suguha and fine workmanship."
+    },
+    {
       "romaji": "mitokoromono",
       "kanji": "三所物",
       "category": "tosogu",
       "definition": "The three-piece set of kozuka, kogai, and menuki."
     },
     {
-      "romaji": "soroimono",
-      "kanji": "揃物",
-      "category": "tosogu",
-      "definition": "A matched set of fittings."
+      "romaji": "mitsu-mune",
+      "kanji": "三棟",
+      "category": "sugata",
+      "definition": "A three-sided back with a flat top."
     },
     {
-      "romaji": "shakudo",
-      "kanji": "赤銅",
-      "category": "metalwork",
-      "definition": "An alloy of copper and gold, patinated to a deep blue-black."
+      "romaji": "mokume",
+      "kanji": "杢目",
+      "category": "kitae",
+      "definition": "Burl or swirling grain pattern, like knots in wood."
     },
     {
-      "romaji": "shibuichi",
-      "kanji": "四分一",
-      "category": "metalwork",
-      "definition": "An alloy of copper and silver, patinated to grey."
+      "romaji": "mokume-hada",
+      "kanji": "杢目肌",
+      "category": "kitae",
+      "definition": "Burl-grain pattern skin/surface."
     },
     {
-      "romaji": "yamagane",
-      "kanji": "山金",
-      "category": "metalwork",
-      "definition": "Unrefined copper; mountain copper."
+      "romaji": "Momoyama",
+      "kanji": "桃山",
+      "category": "general",
+      "definition": "Momoyama period (1573-1603); a brief era of lavish culture bridging Muromachi and Edo."
     },
     {
-      "romaji": "suaka",
-      "kanji": "素赤",
-      "category": "metalwork",
-      "definition": "Plain copper."
+      "romaji": "mon",
+      "kanji": "紋",
+      "category": "general",
+      "definition": "Family crest; heraldic emblem."
+    },
+    {
+      "romaji": "monouchi",
+      "kanji": "物打",
+      "category": "sugata",
+      "definition": "The striking portion of the blade, approximately the upper third."
+    },
+    {
+      "romaji": "moroha-zukuri",
+      "kanji": "諸刃造",
+      "category": "sugata",
+      "definition": "Double-edged construction, typical of ken."
+    },
+    {
+      "romaji": "motohaba",
+      "kanji": "元幅",
+      "category": "sugata",
+      "definition": "The width of the blade at the base (machi)."
+    },
+    {
+      "romaji": "muji-hada",
+      "kanji": "無地肌",
+      "category": "kitae",
+      "definition": "Patternless or invisible grain, extremely fine forging."
+    },
+    {
+      "romaji": "mumei",
+      "kanji": "無銘",
+      "category": "nakago",
+      "definition": "Unsigned; no signature on the tang."
+    },
+    {
+      "romaji": "mune",
+      "kanji": "棟",
+      "category": "sugata",
+      "definition": "The back of the blade (opposite the cutting edge)."
+    },
+    {
+      "romaji": "mune-machi",
+      "kanji": "棟区",
+      "category": "sugata",
+      "definition": "The notch on the back (mune) side."
+    },
+    {
+      "romaji": "muneyaki",
+      "kanji": "棟焼き",
+      "category": "hamon",
+      "definition": "Tempering along the back (mune) of the blade."
+    },
+    {
+      "romaji": "Muromachi",
+      "kanji": "室町",
+      "category": "general",
+      "definition": "Muromachi period (1336-1573); era of mass sword production and rise of the uchigatana."
+    },
+    {
+      "romaji": "Musashi",
+      "kanji": "武蔵",
+      "category": "general",
+      "definition": "Musashi Province; a region covering present-day Tokyo, Saitama, and eastern Kanagawa."
+    },
+    {
+      "romaji": "muzori",
+      "kanji": "無反り",
+      "category": "sugata",
+      "definition": "No curvature; a straight blade."
+    },
+    {
+      "romaji": "nagamaki",
+      "kanji": "長巻",
+      "category": "blade_types",
+      "definition": "A weapon with a blade similar to a tachi but with an exceptionally long handle wrapped in cord."
+    },
+    {
+      "romaji": "nagare-hada",
+      "kanji": "流れ肌",
+      "category": "kitae",
+      "definition": "Flowing grain pattern, where the hada appears to flow along the blade."
+    },
+    {
+      "romaji": "nagasa",
+      "kanji": "長さ",
+      "category": "sugata",
+      "definition": "The length of the blade, measured in a straight line from the machi to the tip."
+    },
+    {
+      "romaji": "naginata",
+      "kanji": "薙刀",
+      "category": "blade_types",
+      "definition": "A polearm with a curved blade, used primarily by warrior monks and women of samurai families."
+    },
+    {
+      "romaji": "naginata-hi",
+      "kanji": "薙刀樋",
+      "category": "horimono",
+      "definition": "Naginata-style groove; a groove pattern imitating the form found on naginata blades."
+    },
+    {
+      "romaji": "naginata-zukuri",
+      "kanji": "薙刀造",
+      "category": "sugata",
+      "definition": "Naginata construction; a blade form with a reverse curve, originally for naginata but sometimes found on swords."
+    },
+    {
+      "romaji": "nakago",
+      "kanji": "茎",
+      "category": "nakago",
+      "definition": "The tang; the part of the blade that fits into the handle."
+    },
+    {
+      "romaji": "nakago-jiri",
+      "kanji": "茎尻",
+      "category": "nakago",
+      "definition": "The end/tip of the tang."
+    },
+    {
+      "romaji": "nakazori",
+      "kanji": "中反り",
+      "category": "sugata",
+      "definition": "Center curvature; deepest point of curve is in the middle of the blade."
     },
     {
       "romaji": "nanako",
@@ -1483,112 +1412,10 @@
       "definition": "Fish-roe ground; a surface covered with nanako pattern."
     },
     {
-      "romaji": "takabori",
-      "kanji": "高彫",
-      "category": "metalwork",
-      "definition": "High-relief carving."
-    },
-    {
-      "romaji": "shishiaibori",
-      "kanji": "肉合彫",
-      "category": "metalwork",
-      "definition": "Sunken relief carving."
-    },
-    {
-      "romaji": "kebori",
-      "kanji": "毛彫",
-      "category": "metalwork",
-      "definition": "Hair-line engraving; fine incised lines."
-    },
-    {
-      "romaji": "katakiribori",
-      "kanji": "片切彫",
-      "category": "metalwork",
-      "definition": "One-sided chisel carving; beveled line engraving."
-    },
-    {
-      "romaji": "sukashi",
-      "kanji": "透",
-      "category": "metalwork",
-      "definition": "Openwork; pierced or cut-through design."
-    },
-    {
-      "romaji": "ji-sukashi",
-      "kanji": "地透",
-      "category": "metalwork",
-      "definition": "Positive silhouette openwork."
-    },
-    {
-      "romaji": "zogan",
-      "kanji": "象嵌",
-      "category": "metalwork",
-      "definition": "Inlay; embedding one metal into another."
-    },
-    {
-      "romaji": "kin-zogan",
-      "kanji": "金象嵌",
-      "category": "metalwork",
-      "definition": "Gold inlay."
-    },
-    {
-      "romaji": "gin-zogan",
-      "kanji": "銀象嵌",
-      "category": "metalwork",
-      "definition": "Silver inlay."
-    },
-    {
-      "romaji": "nunome-zogan",
-      "kanji": "布目象嵌",
-      "category": "metalwork",
-      "definition": "Cloth-pattern inlay; metal pressed into cross-hatched surface."
-    },
-    {
-      "romaji": "iroe",
-      "kanji": "色絵",
-      "category": "metalwork",
-      "definition": "Colored metalwork; polychrome inlay using various metals."
-    },
-    {
-      "romaji": "kin-iroe",
-      "kanji": "金色絵",
-      "category": "metalwork",
-      "definition": "Gold-colored metalwork."
-    },
-    {
-      "romaji": "uttori",
-      "kanji": "打取",
-      "category": "metalwork",
-      "definition": "Applied overlay; metal shapes soldered onto the surface."
-    },
-    {
-      "romaji": "fukurin",
-      "kanji": "覆輪",
-      "category": "metalwork",
-      "definition": "A metal rim or border."
-    },
-    {
-      "romaji": "maki-e",
-      "kanji": "蒔絵",
-      "category": "lacquer",
-      "definition": "Sprinkled picture; lacquer technique using gold/silver powder."
-    },
-    {
-      "romaji": "hiramaki-e",
-      "kanji": "平蒔絵",
-      "category": "lacquer",
-      "definition": "Flat sprinkled picture; maki-e level with the surface."
-    },
-    {
-      "romaji": "takamaki-e",
-      "kanji": "高蒔絵",
-      "category": "lacquer",
-      "definition": "Raised sprinkled picture; maki-e built up in relief."
-    },
-    {
-      "romaji": "togidashi-maki-e",
-      "kanji": "研出蒔絵",
-      "category": "lacquer",
-      "definition": "Burnished maki-e; design polished flush with lacquer."
+      "romaji": "Nanbokucho",
+      "kanji": "南北朝",
+      "category": "general",
+      "definition": "Northern and Southern Courts period (1336-1392); era of large, impressive blades."
     },
     {
       "romaji": "nashiji",
@@ -1597,46 +1424,190 @@
       "definition": "Pear-skin ground; lacquer with gold flakes creating texture."
     },
     {
-      "romaji": "kin-nashiji",
-      "kanji": "金梨子地",
-      "category": "lacquer",
-      "definition": "Gold pear-skin ground."
+      "romaji": "nashiji-hada",
+      "kanji": "梨子地肌",
+      "category": "kitae",
+      "definition": "Pear-skin texture, a fine, granular surface appearance."
     },
     {
-      "romaji": "roiro",
-      "kanji": "蝋色",
-      "category": "lacquer",
-      "definition": "Wax-color finish; highly polished black lacquer."
+      "romaji": "nie",
+      "kanji": "沸",
+      "category": "kitae",
+      "definition": "Individual crystals of martensite visible as bright, sparkling particles."
     },
     {
-      "romaji": "kuro-urushi",
-      "kanji": "黒漆",
-      "category": "lacquer",
-      "definition": "Black lacquer."
+      "romaji": "nie-deki",
+      "kanji": "沸出来",
+      "category": "hamon",
+      "definition": "Made predominantly of nie; a bright, crystalline hamon appearance."
     },
     {
-      "romaji": "aka-urushi",
-      "kanji": "赤漆",
-      "category": "lacquer",
-      "definition": "Red lacquer."
+      "romaji": "nie-gachi",
+      "kanji": "沸がち",
+      "category": "hamon",
+      "definition": "Nie-dominant; more nie than nioi in the hamon."
     },
     {
-      "romaji": "ishime-ji",
-      "kanji": "石目地",
-      "category": "lacquer",
-      "definition": "Stone-surface ground; textured lacquer resembling stone."
+      "romaji": "nie-kuzure",
+      "kanji": "沸崩れ",
+      "category": "hamon",
+      "definition": "Collapsed nie; areas where nie structure has broken down."
     },
     {
-      "romaji": "den",
-      "kanji": "伝",
-      "category": "documentation",
-      "definition": "Attributed to; traditional attribution without certainty."
+      "romaji": "nie-kuzure-boshi",
+      "kanji": "沸崩れ帽子",
+      "category": "boshi",
+      "definition": "Boshi with collapsed or disintegrated nie."
     },
     {
-      "romaji": "kiwame",
-      "kanji": "極め",
-      "category": "documentation",
-      "definition": "Expert attribution; formal appraisal of unsigned blades."
+      "romaji": "nie-suji",
+      "kanji": "沸筋",
+      "category": "hamon",
+      "definition": "Nie lines; streaks formed by concentrations of nie."
+    },
+    {
+      "romaji": "nie-utsuri",
+      "kanji": "沸映り",
+      "category": "kitae",
+      "definition": "Utsuri formed by nie particles, characteristic of Yamashiro work."
+    },
+    {
+      "romaji": "nijuba",
+      "kanji": "二重刃",
+      "category": "hamon",
+      "definition": "Double-edge pattern; a secondary line parallel to the main hamon."
+    },
+    {
+      "romaji": "niku",
+      "kanji": "肉",
+      "category": "sugata",
+      "definition": "The flesh or meat of the blade; the convex surface thickness."
+    },
+    {
+      "romaji": "nikuoki",
+      "kanji": "肉置き",
+      "category": "sugata",
+      "definition": "The distribution of thickness/meat across the blade, indicating robustness."
+    },
+    {
+      "romaji": "nioi",
+      "kanji": "匂",
+      "category": "kitae",
+      "definition": "Extremely fine martensite particles not individually visible, creating a misty appearance."
+    },
+    {
+      "romaji": "nioi-deki",
+      "kanji": "匂出来",
+      "category": "hamon",
+      "definition": "Made predominantly of nioi; a soft, misty hamon appearance."
+    },
+    {
+      "romaji": "nioi-gachi",
+      "kanji": "匂がち",
+      "category": "hamon",
+      "definition": "Nioi-dominant; more nioi than nie in the hamon."
+    },
+    {
+      "romaji": "nioiguchi",
+      "kanji": "匂口",
+      "category": "hamon",
+      "definition": "The visible edge of the hamon where hardened steel meets softer steel."
+    },
+    {
+      "romaji": "Nobukuni",
+      "kanji": "信国",
+      "category": "schools",
+      "definition": "A Yamashiro school active from late Kamakura into Muromachi, often showing Soshu influence."
+    },
+    {
+      "romaji": "notare",
+      "kanji": "湾れ",
+      "category": "hamon",
+      "definition": "Gentle, wave-like undulations in the hamon."
+    },
+    {
+      "romaji": "notare-komi",
+      "kanji": "湾れ込み",
+      "category": "hamon",
+      "definition": "Waves that extend deeply into the blade."
+    },
+    {
+      "romaji": "nunome-zogan",
+      "kanji": "布目象嵌",
+      "category": "metalwork",
+      "definition": "Cloth-pattern inlay; metal pressed into cross-hatched surface."
+    },
+    {
+      "romaji": "o-choji",
+      "kanji": "大丁子",
+      "category": "hamon",
+      "definition": "Large clove pattern."
+    },
+    {
+      "romaji": "o-gunome",
+      "kanji": "大互の目",
+      "category": "hamon",
+      "definition": "Large gunome pattern."
+    },
+    {
+      "romaji": "o-itame",
+      "kanji": "大板目",
+      "category": "kitae",
+      "definition": "Large, coarse wood-grain pattern."
+    },
+    {
+      "romaji": "o-kissaki",
+      "kanji": "大切先",
+      "category": "sugata",
+      "definition": "A large, extended point, characteristic of Nanbokucho period blades."
+    },
+    {
+      "romaji": "o-maru",
+      "kanji": "大丸",
+      "category": "boshi",
+      "definition": "Large, rounded turn-back."
+    },
+    {
+      "romaji": "o-midare",
+      "kanji": "大乱れ",
+      "category": "hamon",
+      "definition": "Large irregular pattern."
+    },
+    {
+      "romaji": "o-mokume",
+      "kanji": "大杢目",
+      "category": "kitae",
+      "definition": "Large, coarse burl-grain pattern."
+    },
+    {
+      "romaji": "o-notare",
+      "kanji": "大湾れ",
+      "category": "hamon",
+      "definition": "Large, pronounced wave pattern."
+    },
+    {
+      "romaji": "o-sujikai",
+      "kanji": "大筋違",
+      "category": "nakago",
+      "definition": "Steeply angled diagonal file marks."
+    },
+    {
+      "romaji": "o-suriage",
+      "kanji": "大磨上げ",
+      "category": "nakago",
+      "definition": "Greatly shortened; significantly reduced in length."
+    },
+    {
+      "romaji": "Omiya",
+      "kanji": "大宮",
+      "category": "schools",
+      "definition": "A Yamato school associated with Omiya shrine. Includes Morikuni and later generations."
+    },
+    {
+      "romaji": "omote",
+      "kanji": "表",
+      "category": "nakago",
+      "definition": "The front or outer side (facing out when worn)."
     },
     {
       "romaji": "origami",
@@ -1645,94 +1616,166 @@
       "definition": "Certificate of authenticity; appraisal document."
     },
     {
+      "romaji": "orikaeshi-mei",
+      "kanji": "折返銘",
+      "category": "nakago",
+      "definition": "Folded-back signature; the original mei preserved when shortening."
+    },
+    {
+      "romaji": "Osafune",
+      "kanji": "長船",
+      "category": "schools",
+      "definition": "The most prolific Bizen school, active from Kamakura through Edo. Includes sub-branches like Nagamitsu, Kagemitsu, and later generations."
+    },
+    {
+      "romaji": "Rai",
+      "kanji": "来",
+      "category": "schools",
+      "definition": "A major Yamashiro school in Kyoto, active from mid-Kamakura through Nanbokucho. Known for elegant nie-deki work."
+    },
+    {
+      "romaji": "rendai",
+      "kanji": "蓮台",
+      "category": "horimono",
+      "definition": "Lotus pedestal; Buddhist lotus throne carving."
+    },
+    {
+      "romaji": "roiro",
+      "kanji": "蝋色",
+      "category": "lacquer",
+      "definition": "Wax-color finish; highly polished black lacquer."
+    },
+    {
+      "romaji": "Sa",
+      "kanji": "左",
+      "category": "schools",
+      "definition": "Founder of the Samonji school in Chikuzen. Known for bold Soshu-influenced style with prominent nie."
+    },
+    {
+      "romaji": "saeru",
+      "kanji": "冴える",
+      "category": "hamon",
+      "definition": "Bright, clear, and vivid; describes a well-defined hamon."
+    },
+    {
+      "romaji": "Sagami",
+      "kanji": "相模",
+      "category": "general",
+      "definition": "Sagami Province; a region in present-day Kanagawa Prefecture, home to the Soshu tradition."
+    },
+    {
+      "romaji": "sageo",
+      "kanji": "下緒",
+      "category": "koshirae",
+      "definition": "The cord attached to the scabbard for securing to the belt."
+    },
+    {
+      "romaji": "saka-ashi",
+      "kanji": "逆足",
+      "category": "hamon",
+      "definition": "Reversed or slanting ashi."
+    },
+    {
+      "romaji": "sakihaba",
+      "kanji": "先幅",
+      "category": "sugata",
+      "definition": "The width of the blade near the point."
+    },
+    {
+      "romaji": "sakizori",
+      "kanji": "先反り",
+      "category": "sugata",
+      "definition": "Curvature concentrated toward the point."
+    },
+    {
+      "romaji": "same",
+      "kanji": "鮫",
+      "category": "koshirae",
+      "definition": "Rayskin; the textured skin used to wrap handles."
+    },
+    {
+      "romaji": "Samonji",
+      "kanji": "左文字",
+      "category": "schools",
+      "definition": "A Chikuzen Province school founded by Sa. Known for Soshu-influenced work and powerful hamon."
+    },
+    {
+      "romaji": "sanbon-sugi",
+      "kanji": "三本杉",
+      "category": "hamon",
+      "definition": "Three-cedar pattern; groups of three pointed elements."
+    },
+    {
+      "romaji": "Sanjo",
+      "kanji": "三条",
+      "category": "schools",
+      "definition": "An early Yamashiro school in Kyoto, legendary for Sanjo Munechika. Active in late Heian period."
+    },
+    {
+      "romaji": "sanko-ken",
+      "kanji": "三鈷剣",
+      "category": "horimono",
+      "definition": "Triple-pronged vajra sword; a Buddhist ritual sword carving with a three-pronged hilt."
+    },
+    {
+      "romaji": "sashi-omote",
+      "kanji": "差表",
+      "category": "nakago",
+      "definition": "The outer side when the blade is thrust through the belt (for katana)."
+    },
+    {
+      "romaji": "sashi-ura",
+      "kanji": "差裏",
+      "category": "nakago",
+      "definition": "The inner side when the blade is thrust through the belt."
+    },
+    {
+      "romaji": "saya",
+      "kanji": "鞘",
+      "category": "koshirae",
+      "definition": "Scabbard; the sheath that holds the blade."
+    },
+    {
       "romaji": "sayagaki",
       "kanji": "鞘書",
       "category": "documentation",
       "definition": "Scabbard inscription; attribution written on the storage scabbard."
     },
     {
-      "romaji": "kao",
-      "kanji": "花押",
+      "romaji": "sensuki",
+      "kanji": "千鋤",
+      "category": "nakago",
+      "definition": "Lengthwise file marks parallel to the tang."
+    },
+    {
+      "romaji": "seppa",
+      "kanji": "切羽",
+      "category": "koshirae",
+      "definition": "Spacers placed on either side of the tsuba."
+    },
+    {
+      "romaji": "setsumei",
+      "kanji": "説明",
       "category": "documentation",
-      "definition": "Stylized signature or monogram."
+      "definition": "Explanation; the descriptive text accompanying a sword evaluation."
     },
     {
-      "romaji": "meikan",
-      "kanji": "銘鑑",
-      "category": "documentation",
-      "definition": "Register of signatures; reference book of smith signatures."
+      "romaji": "shakudo",
+      "kanji": "赤銅",
+      "category": "metalwork",
+      "definition": "An alloy of copper and gold, patinated to a deep blue-black."
     },
     {
-      "romaji": "meibutsu",
-      "kanji": "名物",
-      "category": "documentation",
-      "definition": "Famous blade; a sword of exceptional fame and quality."
+      "romaji": "shibuichi",
+      "kanji": "四分一",
+      "category": "metalwork",
+      "definition": "An alloy of copper and silver, patinated to grey."
     },
     {
-      "romaji": "juyo",
-      "kanji": "重要",
-      "category": "documentation",
-      "definition": "Important; NBTHK designation for significant blades."
-    },
-    {
-      "romaji": "tokubetsu-juyo",
-      "kanji": "特別重要",
-      "category": "documentation",
-      "definition": "Especially Important; highest NBTHK designation."
-    },
-    {
-      "romaji": "token",
-      "kanji": "刀剣",
-      "category": "documentation",
-      "definition": "Sword/blade; general term for Japanese swords."
-    },
-    {
-      "romaji": "kenzen",
-      "kanji": "健全",
-      "category": "assessment",
-      "definition": "Healthy; well-preserved condition with minimal wear."
-    },
-    {
-      "romaji": "taihai",
-      "kanji": "大疲れ",
-      "category": "assessment",
-      "definition": "Greatly tired; significant wear from repeated polishing."
-    },
-    {
-      "romaji": "wazori",
-      "kanji": "輪反り",
-      "category": "assessment",
-      "definition": "Ring curvature; warping from heat or stress."
-    },
-    {
-      "romaji": "kizu",
-      "kanji": "傷",
-      "category": "assessment",
-      "definition": "Flaw; defect or damage in the blade."
-    },
-    {
-      "romaji": "hagire",
-      "kanji": "刃切れ",
-      "category": "assessment",
-      "definition": "Edge crack; a crack in the hardened edge."
-    },
-    {
-      "romaji": "fukure",
-      "kanji": "膨れ",
-      "category": "assessment",
-      "definition": "Blister; a raised area caused by forging flaw."
-    },
-    {
-      "romaji": "kitae-ware",
-      "kanji": "鍛え割れ",
-      "category": "assessment",
-      "definition": "Forging crack; separation in the laminated steel."
-    },
-    {
-      "romaji": "umegane",
-      "kanji": "埋金",
-      "category": "assessment",
-      "definition": "Plug; metal inserted to repair a flaw."
+      "romaji": "shimaru",
+      "kanji": "締まる",
+      "category": "hamon",
+      "definition": "Tight; describes a compact, well-controlled hamon."
     },
     {
       "romaji": "shinae",
@@ -1741,22 +1784,28 @@
       "definition": "Bend; curvature caused by lateral stress."
     },
     {
-      "romaji": "gendaito",
-      "kanji": "現代刀",
-      "category": "schools",
-      "definition": "Modern sword; swords made after 1876."
+      "romaji": "shinogi",
+      "kanji": "鎬",
+      "category": "sugata",
+      "definition": "The ridge line running along the blade that divides the ji (flat) from the shinogi-ji."
     },
     {
-      "romaji": "shinto",
-      "kanji": "新刀",
-      "category": "schools",
-      "definition": "New sword; blades made from approximately 1596-1780."
+      "romaji": "shinogi-ji",
+      "kanji": "鎬地",
+      "category": "sugata",
+      "definition": "The flat area between the shinogi and the mune."
     },
     {
-      "romaji": "koto",
-      "kanji": "古刀",
-      "category": "schools",
-      "definition": "Old sword; blades made before approximately 1596."
+      "romaji": "shinogi-zukuri",
+      "kanji": "鎬造",
+      "category": "sugata",
+      "definition": "The most common blade construction with a distinct ridge line (shinogi) running along the blade."
+    },
+    {
+      "romaji": "shinome-kiri",
+      "kanji": "篠目切",
+      "category": "nakago",
+      "definition": "Bamboo-joint cut file marks; a specific pattern of horizontal file marks."
     },
     {
       "romaji": "shinshinto",
@@ -1765,28 +1814,64 @@
       "definition": "New-new sword; blades made approximately 1781-1876."
     },
     {
-      "romaji": "gokaden",
-      "kanji": "五ヶ伝",
+      "romaji": "shinto",
+      "kanji": "新刀",
       "category": "schools",
-      "definition": "The Five Traditions; the main sword-making schools (Yamashiro, Yamato, Bizen, Soshu, Mino)."
+      "definition": "New sword; blades made from approximately 1596-1780."
     },
     {
-      "romaji": "ko-bizen",
-      "kanji": "古備前",
+      "romaji": "Shintogo",
+      "kanji": "新藤五",
       "category": "schools",
-      "definition": "Old Bizen; early Bizen school work before Ichimonji."
+      "definition": "Shintogo Kunimitsu; a Soshu smith who studied under Masamune. Known for fine tanto and wakizashi."
     },
     {
-      "romaji": "ichimonji",
-      "kanji": "一文字",
-      "category": "schools",
-      "definition": "One-character; famous Bizen school signing with the character 'ichi'."
+      "romaji": "shirake-utsuri",
+      "kanji": "白気映り",
+      "category": "kitae",
+      "definition": "Whitish, faint utsuri."
     },
     {
-      "romaji": "ko-aoe",
-      "kanji": "古青江",
+      "romaji": "shishiaibori",
+      "kanji": "肉合彫",
+      "category": "metalwork",
+      "definition": "Sunken relief carving."
+    },
+    {
+      "romaji": "Shizu",
+      "kanji": "志津",
       "category": "schools",
-      "definition": "Old Aoe; early Bitchu school work."
+      "definition": "A Mino school descended from Soshu tradition via Kaneuji. Known for hitatsura and bold nie."
+    },
+    {
+      "romaji": "shobu-zukuri",
+      "kanji": "菖蒲造",
+      "category": "sugata",
+      "definition": "Similar to shinogi-zukuri but without a yokote line, giving a continuous curve to the point."
+    },
+    {
+      "romaji": "shu-mei",
+      "kanji": "朱銘",
+      "category": "nakago",
+      "definition": "Red lacquer signature; attribution in red lacquer."
+    },
+    {
+      "romaji": "soe-hi",
+      "kanji": "添樋",
+      "category": "horimono",
+      "definition": "Companion groove; a shorter groove alongside another."
+    },
+    {
+      "romaji": "sori",
+      "kanji": "反り",
+      "category": "sugata",
+      "definition": "The curvature of the blade."
+    },
+    {
+      "romaji": "soroimono",
+      "kanji": "揃物",
+      "category": "tosogu",
+      "definition": "A matched set of fittings."
     },
     {
       "romaji": "soshu",
@@ -1795,46 +1880,142 @@
       "definition": "Sagami Province tradition; the Kamakura school."
     },
     {
-      "romaji": "aoi-mon",
-      "kanji": "葵紋",
-      "category": "general",
-      "definition": "Hollyhock crest; the Tokugawa family emblem."
+      "romaji": "suaka",
+      "kanji": "素赤",
+      "category": "metalwork",
+      "definition": "Plain copper."
     },
     {
-      "romaji": "kiku-mon",
-      "kanji": "菊紋",
-      "category": "general",
-      "definition": "Chrysanthemum crest; the Imperial emblem."
+      "romaji": "sudare-ba",
+      "kanji": "簾刃",
+      "category": "hamon",
+      "definition": "Bamboo-blind pattern; vertical streaks in the hamon."
     },
     {
-      "romaji": "kiri-mon",
-      "kanji": "桐紋",
-      "category": "general",
-      "definition": "Paulownia crest; an imperial and government emblem."
+      "romaji": "sudareba",
+      "kanji": "簾刃",
+      "category": "hamon",
+      "definition": "Bamboo-blind pattern; vertical streaks in the hamon resembling a rolled bamboo blind. Alternate form of sudare-ba."
     },
     {
-      "romaji": "mon",
-      "kanji": "紋",
-      "category": "general",
-      "definition": "Family crest; heraldic emblem."
+      "romaji": "sugu",
+      "kanji": "直",
+      "category": "boshi",
+      "definition": "Straight; the boshi runs straight to the point."
     },
     {
-      "romaji": "daimyo",
-      "kanji": "大名",
-      "category": "general",
-      "definition": "Feudal lord; provincial ruler."
+      "romaji": "suguha",
+      "kanji": "直刃",
+      "category": "hamon",
+      "definition": "Straight temper line running parallel to the edge."
     },
     {
-      "romaji": "tosho",
-      "kanji": "刀匠",
-      "category": "general",
-      "definition": "Swordsmith; master sword maker."
+      "romaji": "suguha-cho",
+      "kanji": "直刃調",
+      "category": "hamon",
+      "definition": "Straight temper line tendency; primarily straight with slight variations."
     },
     {
-      "romaji": "tameshigiri",
-      "kanji": "試し斬り",
-      "category": "general",
-      "definition": "Test cutting; evaluating a blade's cutting ability."
+      "romaji": "suji-chigai",
+      "kanji": "筋違",
+      "category": "nakago",
+      "definition": "Cross-hatched or intersecting file marks."
+    },
+    {
+      "romaji": "sujikai",
+      "kanji": "筋違",
+      "category": "nakago",
+      "definition": "Diagonal file marks."
+    },
+    {
+      "romaji": "sukashi",
+      "kanji": "透",
+      "category": "metalwork",
+      "definition": "Openwork; pierced or cut-through design."
+    },
+    {
+      "romaji": "suken",
+      "kanji": "素剣",
+      "category": "horimono",
+      "definition": "Plain sword; simple sword carving without elaborate details."
+    },
+    {
+      "romaji": "sun-nobi",
+      "kanji": "寸延び",
+      "category": "sugata",
+      "definition": "Extended length, longer than the standard for the blade type."
+    },
+    {
+      "romaji": "sun-zumari",
+      "kanji": "寸詰り",
+      "category": "sugata",
+      "definition": "Shortened length, shorter than the standard for the blade type."
+    },
+    {
+      "romaji": "sunagashi",
+      "kanji": "砂流し",
+      "category": "hamon",
+      "definition": "Flowing sand; sweeping lines of nie in the hamon."
+    },
+    {
+      "romaji": "suriage",
+      "kanji": "磨上げ",
+      "category": "nakago",
+      "definition": "Shortened tang; the blade has been cut down."
+    },
+    {
+      "romaji": "tachi",
+      "kanji": "太刀",
+      "category": "blade_types",
+      "definition": "A long sword worn edge-down, suspended from the belt. The primary battlefield sword of the Heian through Muromachi periods."
+    },
+    {
+      "romaji": "tachi koshirae",
+      "kanji": "太刀拵",
+      "category": "koshirae",
+      "definition": "Tachi-style mountings for a suspended sword."
+    },
+    {
+      "romaji": "Tadayoshi",
+      "kanji": "忠吉",
+      "category": "schools",
+      "definition": "A Hizen Province school founded by Hashimoto Tadayoshi. Known for refined Shinto-era blades."
+    },
+    {
+      "romaji": "taihai",
+      "kanji": "大疲れ",
+      "category": "assessment",
+      "definition": "Greatly tired; significant wear from repeated polishing."
+    },
+    {
+      "romaji": "Taima",
+      "kanji": "当麻",
+      "category": "schools",
+      "definition": "A Yamato school near Taima temple. Known for masame and robust construction."
+    },
+    {
+      "romaji": "takabori",
+      "kanji": "高彫",
+      "category": "metalwork",
+      "definition": "High-relief carving."
+    },
+    {
+      "romaji": "takamaki-e",
+      "kanji": "高蒔絵",
+      "category": "lacquer",
+      "definition": "Raised sprinkled picture; maki-e built up in relief."
+    },
+    {
+      "romaji": "takanoha",
+      "kanji": "鷹の羽",
+      "category": "nakago",
+      "definition": "Hawk-feather pattern; V-shaped file marks."
+    },
+    {
+      "romaji": "tama-ryu",
+      "kanji": "玉龍",
+      "category": "horimono",
+      "definition": "Jewel dragon; a dragon depicted with or pursuing a sacred jewel (hoju)."
     },
     {
       "romaji": "tameshi-mei",
@@ -1843,10 +2024,268 @@
       "definition": "Cutting test inscription; record of test cuts inscribed on tang."
     },
     {
-      "romaji": "setsumei",
-      "kanji": "説明",
+      "romaji": "tameshigiri",
+      "kanji": "試し斬り",
+      "category": "general",
+      "definition": "Test cutting; evaluating a blade's cutting ability."
+    },
+    {
+      "romaji": "tanago-bara",
+      "kanji": "鱈子腹",
+      "category": "nakago",
+      "definition": "Cod-roe belly; a nakago (tang) shape with a rounded, full contour on the ha (edge) side, resembling a belly full of fish roe."
+    },
+    {
+      "romaji": "tanto",
+      "kanji": "短刀",
+      "category": "blade_types",
+      "definition": "A dagger or knife, typically under 30 cm in blade length."
+    },
+    {
+      "romaji": "te-sagari",
+      "kanji": "手下り",
+      "category": "nakago",
+      "definition": "Hand-slanting file marks; diagonal yasurime created by hand pressure."
+    },
+    {
+      "romaji": "Tegai",
+      "kanji": "手掻",
+      "category": "schools",
+      "definition": "A Yamato school centered at Tegai temple in Nara. Known for masame and religious motifs."
+    },
+    {
+      "romaji": "tobiyaki",
+      "kanji": "飛焼き",
+      "category": "hamon",
+      "definition": "Scattered tempering; isolated patches of hardening above the hamon."
+    },
+    {
+      "romaji": "togari-boshi",
+      "kanji": "尖り帽子",
+      "category": "boshi",
+      "definition": "Pointed boshi."
+    },
+    {
+      "romaji": "togari-gunome",
+      "kanji": "尖り互の目",
+      "category": "hamon",
+      "definition": "Pointed gunome pattern."
+    },
+    {
+      "romaji": "togariba",
+      "kanji": "尖り刃",
+      "category": "hamon",
+      "definition": "Pointed, angular peaks in the hamon."
+    },
+    {
+      "romaji": "togidashi-maki-e",
+      "kanji": "研出蒔絵",
+      "category": "lacquer",
+      "definition": "Burnished maki-e; design polished flush with lacquer."
+    },
+    {
+      "romaji": "token",
+      "kanji": "刀剣",
       "category": "documentation",
-      "definition": "Explanation; the descriptive text accompanying a sword evaluation."
+      "definition": "Sword/blade; general term for Japanese swords."
+    },
+    {
+      "romaji": "tokubetsu-juyo",
+      "kanji": "特別重要",
+      "category": "documentation",
+      "definition": "Especially Important; highest NBTHK designation."
+    },
+    {
+      "romaji": "torii-zori",
+      "kanji": "鳥居反り",
+      "category": "sugata",
+      "definition": "Even curvature along the entire blade length, like a torii gate."
+    },
+    {
+      "romaji": "tosho",
+      "kanji": "刀匠",
+      "category": "general",
+      "definition": "Swordsmith; master sword maker."
+    },
+    {
+      "romaji": "tsuba",
+      "kanji": "鍔",
+      "category": "tosogu",
+      "definition": "The sword guard."
+    },
+    {
+      "romaji": "tsuka",
+      "kanji": "柄",
+      "category": "koshirae",
+      "definition": "Handle; the grip portion of the sword."
+    },
+    {
+      "romaji": "tsuka-ito",
+      "kanji": "柄糸",
+      "category": "koshirae",
+      "definition": "Handle wrapping cord; the braid wrapped over the same."
+    },
+    {
+      "romaji": "tsume",
+      "kanji": "爪",
+      "category": "horimono",
+      "definition": "Claw or talon carving."
+    },
+    {
+      "romaji": "ubu",
+      "kanji": "生ぶ",
+      "category": "nakago",
+      "definition": "Original, unaltered tang; the blade has not been shortened."
+    },
+    {
+      "romaji": "uchigatana koshirae",
+      "kanji": "打刀拵",
+      "category": "koshirae",
+      "definition": "Katana-style mountings for a thrust-through-belt sword."
+    },
+    {
+      "romaji": "uchinoke",
+      "kanji": "打除け",
+      "category": "hamon",
+      "definition": "Projections; areas where the hamon extends into the ji."
+    },
+    {
+      "romaji": "uchizori",
+      "kanji": "内反り",
+      "category": "sugata",
+      "definition": "Reverse curvature where the edge curves inward, common on tanto."
+    },
+    {
+      "romaji": "ukibori",
+      "kanji": "浮彫",
+      "category": "horimono",
+      "definition": "Relief carving; design raised above the surface of the blade."
+    },
+    {
+      "romaji": "umegane",
+      "kanji": "埋金",
+      "category": "assessment",
+      "definition": "Plug; metal inserted to repair a flaw."
+    },
+    {
+      "romaji": "Umetada",
+      "kanji": "埋忠",
+      "category": "schools",
+      "definition": "A Yamashiro family of metalworkers and sword makers active in Momoyama and Edo periods."
+    },
+    {
+      "romaji": "unokubi-zukuri",
+      "kanji": "鵜首造",
+      "category": "sugata",
+      "definition": "A blade form with the shinogi line dropping sharply near the point, creating a cormorant-neck profile."
+    },
+    {
+      "romaji": "ura",
+      "kanji": "裏",
+      "category": "nakago",
+      "definition": "The back or inner side (facing the body when worn)."
+    },
+    {
+      "romaji": "urumi",
+      "kanji": "潤み",
+      "category": "hamon",
+      "definition": "Moistness; a soft, subdued quality in the nioiguchi where the boundary between tempered and untempered steel appears blurred or hazy."
+    },
+    {
+      "romaji": "utsuri",
+      "kanji": "映り",
+      "category": "kitae",
+      "definition": "A misty, cloud-like reflection in the ji, especially characteristic of Bizen work."
+    },
+    {
+      "romaji": "uttori",
+      "kanji": "打取",
+      "category": "metalwork",
+      "definition": "Applied overlay; metal shapes soldered onto the surface."
+    },
+    {
+      "romaji": "wakizashi",
+      "kanji": "脇差",
+      "category": "blade_types",
+      "definition": "A short sword, typically 30-60 cm in blade length. Often paired with a katana as part of a daisho set."
+    },
+    {
+      "romaji": "wazori",
+      "kanji": "輪反り",
+      "category": "assessment",
+      "definition": "Ring curvature; warping from heat or stress."
+    },
+    {
+      "romaji": "yakiba",
+      "kanji": "焼刃",
+      "category": "hamon",
+      "definition": "The hardened edge area; the tempered portion of the blade."
+    },
+    {
+      "romaji": "yakidashi",
+      "kanji": "焼出し",
+      "category": "hamon",
+      "definition": "The beginning of the hamon at the base of the blade."
+    },
+    {
+      "romaji": "yakihaba",
+      "kanji": "焼幅",
+      "category": "hamon",
+      "definition": "The width of the tempered area (hamon)."
+    },
+    {
+      "romaji": "yakiotoshi",
+      "kanji": "焼落し",
+      "category": "hamon",
+      "definition": "Area where the hamon drops below the ha-machi."
+    },
+    {
+      "romaji": "yakizume",
+      "kanji": "焼詰め",
+      "category": "boshi",
+      "definition": "No turn-back; the hamon ends at the tip without returning."
+    },
+    {
+      "romaji": "yamagane",
+      "kanji": "山金",
+      "category": "metalwork",
+      "definition": "Unrefined copper; mountain copper."
+    },
+    {
+      "romaji": "yari",
+      "kanji": "槍",
+      "category": "blade_types",
+      "definition": "A spear with various blade shapes."
+    },
+    {
+      "romaji": "yasurime",
+      "kanji": "鑢目",
+      "category": "nakago",
+      "definition": "File marks on the tang."
+    },
+    {
+      "romaji": "yo",
+      "kanji": "葉",
+      "category": "hamon",
+      "definition": "Leaves; leaf-shaped formations in the hamon."
+    },
+    {
+      "romaji": "yokote",
+      "kanji": "横手",
+      "category": "sugata",
+      "definition": "The line separating the main blade from the kissaki."
+    },
+    {
+      "romaji": "yubashiri",
+      "kanji": "湯走り",
+      "category": "hamon",
+      "definition": "Running water; isolated areas of nie in the ji above the hamon."
+    },
+    {
+      "romaji": "zogan",
+      "kanji": "象嵌",
+      "category": "metalwork",
+      "definition": "Inlay; embedding one metal into another."
     }
   ]
 }

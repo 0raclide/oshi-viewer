@@ -152,6 +152,60 @@ a {
     text-orientation: mixed;
   }
 
+  /* CSS Containment for performance */
+  .contain-strict {
+    contain: strict;
+  }
+  .contain-layout {
+    contain: layout;
+  }
+  .contain-paint {
+    contain: paint;
+  }
+  .contain-content {
+    contain: content;
+  }
+  .contain-size {
+    contain: size;
+  }
+
+  /* GPU-accelerated transforms */
+  .gpu-accelerated {
+    transform: translateZ(0);
+    will-change: transform;
+  }
+
+  /* Reduced motion preference */
+  @media (prefers-reduced-motion: reduce) {
+    *,
+    *::before,
+    *::after {
+      animation-duration: 0.01ms !important;
+      animation-iteration-count: 1 !important;
+      transition-duration: 0.01ms !important;
+    }
+  }
+
+  /* Thin scrollbar for filter panels and compact areas */
+  .scrollbar-thin {
+    scrollbar-width: thin;
+    scrollbar-color: var(--border) transparent;
+  }
+  .scrollbar-thin::-webkit-scrollbar {
+    width: 4px;
+    height: 4px;
+  }
+  .scrollbar-thin::-webkit-scrollbar-track {
+    background: transparent;
+  }
+  .scrollbar-thin::-webkit-scrollbar-thumb {
+    background: var(--border);
+    border-radius: 2px;
+  }
+  .scrollbar-thin::-webkit-scrollbar-thumb:hover {
+    background: var(--text-muted);
+  }
+
   /* Card hover effect - refined */
   .card-hover {
     transition: all var(--transition-elegant);
@@ -304,6 +358,13 @@ a {
 @keyframes shimmer {
   0% { background-position: 200% 0; }
   100% { background-position: -200% 0; }
+}
+
+/* Shimmer animation utility for loading states */
+.animate-shimmer {
+  background: linear-gradient(110deg, transparent 0%, var(--border) 50%, transparent 100%);
+  background-size: 200% 100%;
+  animation: shimmer 1.2s ease-in-out infinite;
 }
 
 /* Modal overlay with refined blur */
@@ -625,6 +686,80 @@ a {
   background: rgba(26, 25, 24, 0.8);
   backdrop-filter: blur(12px) saturate(150%);
   border: 1px solid var(--border);
+}
+
+/* View Transitions API for smooth navigation */
+@view-transition {
+  navigation: auto;
+}
+
+/* Define which elements should persist during transitions */
+::view-transition-old(root),
+::view-transition-new(root) {
+  animation-duration: 200ms;
+  animation-timing-function: ease-out;
+}
+
+/* Header should cross-fade quickly */
+::view-transition-old(header),
+::view-transition-new(header) {
+  animation-duration: 100ms;
+}
+
+/* Main content slides and fades */
+::view-transition-old(main-content) {
+  animation: slide-out-left 200ms ease-out forwards;
+}
+
+::view-transition-new(main-content) {
+  animation: slide-in-right 200ms ease-out forwards;
+}
+
+@keyframes slide-out-left {
+  from { opacity: 1; transform: translateX(0); }
+  to { opacity: 0; transform: translateX(-20px); }
+}
+
+@keyframes slide-in-right {
+  from { opacity: 0; transform: translateX(20px); }
+  to { opacity: 1; transform: translateX(0); }
+}
+
+/* Assign view transition names to persistent elements */
+.view-transition-header {
+  view-transition-name: header;
+}
+
+.view-transition-main {
+  view-transition-name: main-content;
+}
+
+.view-transition-panel {
+  view-transition-name: right-panel;
+}
+
+/* Fallback for browsers without View Transitions */
+@supports not (view-transition-name: none) {
+  .page-enter {
+    animation: fadeSlideIn 250ms ease-out forwards;
+  }
+
+  @keyframes fadeSlideIn {
+    from {
+      opacity: 0;
+      transform: translateY(8px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+}
+
+/* Instant content appearance to reduce perceived loading */
+.content-ready {
+  opacity: 1;
+  transform: none;
 }
 
 /* Print styles for scholarly output */
